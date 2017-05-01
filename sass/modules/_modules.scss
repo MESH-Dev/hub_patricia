@@ -17,9 +17,9 @@
 Imports
 ---------------------------------------------------------------------------------------------------- */
 
-@import url(http://fonts.googleapis.com/css?family=Tinos:400,700,400italic);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700,300);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+// @import url(http://fonts.googleapis.com/css?family=Tinos:400,700,400italic);
+// @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,700,300);
+// @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
 
 
 /*
@@ -86,163 +86,163 @@ Defaults
 /* Typographical Elements
 --------------------------------------------- */
 
-html {
-	background-color: #262626;
-	font-size: 62.5%; /* 10px browser default */
-	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
-}
+// html {
+// 	background-color: #262626;
+// 	font-size: 62.5%; /* 10px browser default */
+// 	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+// }
 
-body {
-	background-color: #fff;
-	color: #231f20;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	font-size: 1.6rem;
-	font-weight: 400;
-	line-height: 1.4;
-}
+// body {
+// 	background-color: #fff;
+// 	color: #231f20;
+// 	font-family: 'Roboto', sans-serif;
+// 	font-size: 16px;
+// 	font-size: 1.6rem;
+// 	font-weight: 400;
+// 	line-height: 1.4;
+// }
 
-a,
-button,
-input:focus,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-textarea:focus,
-.button {
-	-webkit-transition: all 0.1s ease-in-out;
-	-moz-transition:    all 0.1s ease-in-out;
-	-ms-transition:     all 0.1s ease-in-out;
-	-o-transition:      all 0.1s ease-in-out;
-	transition:         all 0.1s ease-in-out;
-}
+// a,
+// button,
+// input:focus,
+// input[type="button"],
+// input[type="reset"],
+// input[type="submit"],
+// textarea:focus,
+// .button {
+// 	-webkit-transition: all 0.1s ease-in-out;
+// 	-moz-transition:    all 0.1s ease-in-out;
+// 	-ms-transition:     all 0.1s ease-in-out;
+// 	-o-transition:      all 0.1s ease-in-out;
+// 	transition:         all 0.1s ease-in-out;
+// }
 
-::-moz-selection {
-	background-color: #333;
-	color: #fff;
-}
+// ::-moz-selection {
+// 	background-color: #333;
+// 	color: #fff;
+// }
 
-::selection {
-	background-color: #333;
-	color: #fff;
-}
+// ::selection {
+// 	background-color: #333;
+// 	color: #fff;
+// }
 
-a {
-	color: #0094CF;
-	text-decoration: none;
-}
+// a {
+// 	color: #0094CF;
+// 	text-decoration: none;
+// }
 
-a img {
-	margin-bottom: -4px;
-	margin-bottom: -0.4rem;
-}
+// a img {
+// 	margin-bottom: -4px;
+// 	margin-bottom: -0.4rem;
+// }
 
-a:hover {
-	color: #231F20;
-}
+// a:hover {
+// 	color: #231F20;
+// }
 
-p {
-	margin: 0 0 20px;
-	margin: 0 0 2rem;
-	padding: 0;
-}
+// p {
+// 	margin: 0 0 20px;
+// 	margin: 0 0 2rem;
+// 	padding: 0;
+// }
 
-strong {
-	font-weight: 700;
-}
+// strong {
+// 	font-weight: 700;
+// }
 
-ol,
-ul {
-	margin: 0;
-	padding: 0;
-}
+// ol,
+// ul {
+// 	margin: 0;
+// 	padding: 0;
+// }
 
-blockquote {
-	border-left: 1px solid #0095d0;
-	color: #616264;
-	float: left;
-	font-family: 'Tinos',serif;
-	font-style: italic;
-	margin: 10px 40px 40px;
-	margin: 1rem 4rem 4rem;
-	padding: 0 0 0 20px;
-	padding: 0 0 0 2rem;
-}
+// blockquote {
+// 	border-left: 1px solid #0095d0;
+// 	color: #616264;
+// 	float: left;
+// 	font-family: 'Tinos',serif;
+// 	font-style: italic;
+// 	margin: 10px 40px 40px;
+// 	margin: 1rem 4rem 4rem;
+// 	padding: 0 0 0 20px;
+// 	padding: 0 0 0 2rem;
+// }
 
-blockquote .name {
-	background-color: #0095d0;
-	color: #FFF;
-	display: block;
-	float: left;
-	font-family: 'Roboto',sans-serif;
-	font-size: 14px;
-	font-size: 1.4rem;
-	font-style: normal;
-	margin: 15px 0 0 -32px;
-	padding: 2px 30px;
-	padding: 0.2rem 3rem;
-	position: relative;
-}
+// blockquote .name {
+// 	background-color: #0095d0;
+// 	color: #FFF;
+// 	display: block;
+// 	float: left;
+// 	font-family: 'Roboto',sans-serif;
+// 	font-size: 14px;
+// 	font-size: 1.4rem;
+// 	font-style: normal;
+// 	margin: 15px 0 0 -32px;
+// 	padding: 2px 30px;
+// 	padding: 0.2rem 3rem;
+// 	position: relative;
+// }
 
-blockquote .name:before {
-	background: url(images/blockquote-ribbon.png) no-repeat  0 0;
-	content: "";
-	height: 8px;
-	left: 0;
-	position: absolute;
-	width: 12px;
-	top: -8px;
-}
+// blockquote .name:before {
+// 	background: url(images/blockquote-ribbon.png) no-repeat  0 0;
+// 	content: "";
+// 	height: 8px;
+// 	left: 0;
+// 	position: absolute;
+// 	width: 12px;
+// 	top: -8px;
+// }
 
-.entry-content blockquote p {
-	margin-bottom: 0;
-}
+// .entry-content blockquote p {
+// 	margin-bottom: 0;
+// }
 
-.entry-content code {
-	background-color: #231f20;
-	color: #ddd;
-}
+// .entry-content code {
+// 	background-color: #231f20;
+// 	color: #ddd;
+// }
 
-cite {
-	font-style: normal;
-}
+// cite {
+// 	font-style: normal;
+// }
 
-/* Headings
---------------------------------------------- */
+// /* Headings
+// --------------------------------------------- */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: #231f20;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
-	line-height: 1.2;
-	margin: 0 0 16px;
-	margin: 0 0 1.6rem;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+// 	color: #231f20;
+// 	font-family: 'Roboto', sans-serif;
+// 	font-weight: 500;
+// 	line-height: 1.2;
+// 	margin: 0 0 16px;
+// 	margin: 0 0 1.6rem;
+// }
 
-h1 {
-	font-size: 22px;
-	font-size: 2.2rem;
-}
+// h1 {
+// 	font-size: 22px;
+// 	font-size: 2.2rem;
+// }
 
-h2 {
-	font-size: 20px;
-	font-size: 2rem;
-}
+// h2 {
+// 	font-size: 20px;
+// 	font-size: 2rem;
+// }
 
-h3 {
-	font-size: 18px;
-	font-size: 1.8rem;
-}
+// h3 {
+// 	font-size: 18px;
+// 	font-size: 1.8rem;
+// }
 
-h4 {
-	font-size: 16px;
-	font-size: 1.6rem;
-}
+// h4 {
+// 	font-size: 16px;
+// 	font-size: 1.6rem;
+// }
 
 
 /* Objects
@@ -401,8 +401,8 @@ Structure and Layout
 .site-inner {
 	background: url(images/site-inner-bg.jpg) repeat-x bottom left #FFF;
 	clear: both;
-	padding-top: 40px;
-	padding-top: 4rem;
+	// padding-top: 40px;
+	// padding-top: 4rem;
 }
 
 /* Column Widths and Positions
@@ -1277,8 +1277,8 @@ Site Navigation
 	border: none;
 	color: #231f20;
 	display: block;
-	padding: 20px 22px;
-	padding: 2rem 2.2rem;
+	// padding: 20px 22px;
+	// padding: 2rem 2.2rem;
 	position: relative;
 }
 
