@@ -23,6 +23,17 @@ function wsm_child_do_footer() {
 
 	echo '<div class="footer-left shaun">';
 
+	echo '<form method="get" id="searchform" action="'. get_bloginfo('url') .'/">
+			<div class="form input">
+				<label for="searchHeader" class="sr-only">Search the site</label>
+			<input id="searchHeader" class="hide" type="text" placeholder="Search the site..." value="'.the_search_query() .'" name="s" id="s" />
+			<div class="focus-bg"></div>
+			<button type="submit" class="form submit search-submit" id="searchsubmit" value="" >
+				<span class="sr-only">Submit search</span>
+			</button>			
+		</div>
+	</form>';
+
 	$contact = genesis_get_option( 'wsm_contact_info', 'patricia-settings' );
 
 	if ( !empty($contact ) ) {

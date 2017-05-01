@@ -63,7 +63,7 @@ function patricia_init() {
 	include_once( CHILD_DIR . '/lib/structure/sidebar.php');
 	require_once( CHILD_DIR . '/lib/structure/comment-form.php');
 	include_once( CHILD_DIR . '/lib/structure/footer.php');
-	//include_once( CHILD_DIR . '/lib/structure/header.php');
+	include_once( CHILD_DIR . '/lib/structure/header.php');
 
 	// Shortcodes
 	include_once( CHILD_DIR . '/lib/functions/shortcodes.php');
