@@ -15,7 +15,11 @@
  	ob_start();
 	add_action( 'genesis_before_header', 'mesh_before_header' );
 	function mesh_before_header(){
-		echo '<div class="gateway-line" style="background-color:cyan; height:80px;"></div>';
+		echo '<nav class="gateway-line" style="background-color: #0F1C2D;">';
+		echo '<div class="wrap">';
+		echo '<p style="color:white;">This is the Gateway Line</p>';
+		echo '</div>';
+		echo'</nav>';
 	}
 	ob_end_clean();
 ?>
