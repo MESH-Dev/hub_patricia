@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 	Theme Name: WVHub
 	Description: Patricia is a non-profit WordPress theme designed for charity organizations. This Genesis child theme has six color options, lots of features, and it is SEO friendly. 
@@ -880,9 +881,48 @@ td:last-child {
   padding-right: 0;
 }
 
+/* line 1, sass/modules/_header.scss */
+.site-header {
+  background: rgba(255, 255, 255, 0.7);
+}
 /* line 3, sass/modules/_header.scss */
+.site-header .nav-primary {
+  background: none;
+}
+
+/* line 8, sass/modules/_header.scss */
+.home.page-template .site-header {
+  top: 40px;
+  position: absolute;
+}
+
+/* line 13, sass/modules/_header.scss */
+.gateway-line {
+  height: 40px;
+  background-color: #0B1C2D;
+  padding: 5px;
+}
+/* line 17, sass/modules/_header.scss */
+.gateway-line a.social-nav-cta {
+  font-family: 'Neris-Bold', sans-serif;
+  font-size: 1.8rem;
+  color: #D0E873;
+  float: right;
+}
+/* line 22, sass/modules/_header.scss */
+.gateway-line a.social-nav-cta:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 31, sass/modules/_header.scss */
 .menu-primary li a {
   padding: 10px;
+}
+
+/* line 1, sass/modules/_footer.scss */
+.site-footer {
+  background-color: #0B1C2D;
 }
 
 /*
@@ -2141,7 +2181,6 @@ Site Header
 /* line 1126, sass/modules/_modules.scss */
 .home.page .site-header,
 .site-header {
-  position: relative;
   z-index: 100;
 }
 
@@ -3383,7 +3422,6 @@ Site Footer
 ---------------------------------------------------------------------------------------------------- */
 /* line 2233, sass/modules/_modules.scss */
 .site-footer {
-  background-color: #262626;
   color: #fff;
   font-size: 15px;
   font-size: 1.5rem;
@@ -4636,7 +4674,7 @@ Media Queries
 /* line 8, sass/modules/_layout.scss */
 .gate-bg {
   width: 100vw;
-  height: 640px;
+  height: 805px;
   background-color: #0B1C2D;
   color: #FFFFFF;
 }
@@ -4774,6 +4812,7 @@ Media Queries
 }
 /* line 118, sass/modules/_layout.scss */
 .secondary-cta-group .secondary-cta h4 {
+  font-family: 'Neris-Bold', sans-serif;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -4784,13 +4823,17 @@ Media Queries
   margin: 0;
   line-height: 1.2;
 }
+/* line 129, sass/modules/_layout.scss */
+.secondary-cta-group .secondary-cta h4::after {
+  content: " →";
+}
 @media screen and (max-width: 900px) {
   /* line 118, sass/modules/_layout.scss */
   .secondary-cta-group .secondary-cta h4 {
     font-size: 2.4rem;
   }
 }
-/* line 132, sass/modules/_layout.scss */
+/* line 136, sass/modules/_layout.scss */
 .secondary-cta-group .secondary-cta .screen {
   background-size: cover;
   background-position: center;
@@ -4801,7 +4844,7 @@ Media Queries
   right: 0;
   filter: grayscale(1) contrast(50%);
 }
-/* line 144, sass/modules/_layout.scss */
+/* line 148, sass/modules/_layout.scss */
 .secondary-cta-group .secondary-cta:hover h4 {
   color: #D0E873;
 }

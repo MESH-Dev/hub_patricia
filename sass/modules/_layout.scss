@@ -7,7 +7,7 @@
 
 .gate-bg{
 	width: 100vw;
-	height: 640px;
+	height: 805px;
 	background-color: $dark-navy;
 	color: $white;
 	.gate-spacer{
@@ -116,6 +116,7 @@
 			}
 		}
 		h4{
+			font-family: 'Neris-Bold', sans-serif;
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -125,6 +126,9 @@
 			z-index: 1;
 			margin: 0;
 			line-height: 1.2;
+			&::after{
+				content: ' →'
+			}
 			@media screen and (max-width: 900px){
 				font-size: 2.4rem;
 			}
