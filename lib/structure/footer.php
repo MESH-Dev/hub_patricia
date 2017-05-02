@@ -62,6 +62,6 @@ function wsm_child_do_footer() {
 		echo '<p class="copy">&copy;'. date('Y') .' '. do_shortcode( genesis_get_option( 'wsm_copyright', 'patricia-settings' ) ) . '</p>';
 	}
 
-	echo '</div><!-- end .footer-right -->';
+	echo '</div><script type="text/javascript" src="wp-content/themes/WVHub/main.js"></script><!-- end .footer-right -->';
 
 }
