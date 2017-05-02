@@ -4678,6 +4678,7 @@ Media Queries
   background-color: #0B1C2D;
   color: #FFFFFF;
 }
+
 /* line 13, sass/modules/_layout.scss */
 .gate-bg .gate-spacer {
   height: 100%;
@@ -4700,6 +4701,13 @@ Media Queries
 }
 
 /* line 27, sass/modules/_layout.scss */
+/* line 7, sass/modules/_layout.scss */
+.gate-bg.wp-widget-plugin-box {
+  height: initial;
+  padding: 1em;
+}
+
+/* line 13, sass/modules/_layout.scss */
 .gate-cta {
   height: 100%;
   display: -webkit-flex;
@@ -4712,6 +4720,7 @@ Media Queries
   -ms-justify-content: center;
   justify-content: center;
 }
+
 /* line 38, sass/modules/_layout.scss */
 .gate-cta span {
   color: #D0E873;
@@ -4724,6 +4733,18 @@ Media Queries
 }
 
 /* line 48, sass/modules/_layout.scss */
+
+/* line 24, sass/modules/_layout.scss */
+.gate-cta span {
+  color: #D0E873;
+}
+/* line 28, sass/modules/_layout.scss */
+.gate-cta.widget-textarea {
+  height: initial;
+}
+
+/* line 33, sass/modules/_layout.scss */
+
 .cta-dropdown {
   position: relative;
   height: 55px;
@@ -4734,12 +4755,13 @@ Media Queries
   padding: 12px;
   cursor: pointer;
 }
-/* line 57, sass/modules/_layout.scss */
+
 .cta-dropdown h6 {
   font-size: 2rem;
   display: inline-block;
   vertical-align: top;
 }
+
 @media screen and (max-width: 400px) {
   /* line 57, sass/modules/_layout.scss */
   .cta-dropdown h6 {
@@ -4747,6 +4769,7 @@ Media Queries
   }
 }
 /* line 65, sass/modules/_layout.scss */
+
 .cta-dropdown svg {
   position: absolute;
   right: 0;
@@ -4754,6 +4777,7 @@ Media Queries
   height: 44px;
   fill: #D0E873;
 }
+
 /* line 72, sass/modules/_layout.scss */
 .cta-dropdown .dropdown-menu-type {
   display: none;
@@ -4785,6 +4809,14 @@ Media Queries
 }
 
 /* line 99, sass/modules/_layout.scss */
+
+
+/* line 56, sass/modules/_layout.scss */
+.gate-spacer {
+  height: 100%;
+}
+
+
 .secondary-cta-group {
   display: -webkit-flex;
   display: -ms-flex;
@@ -4793,6 +4825,7 @@ Media Queries
   -ms-justify-content: space-between;
   justify-content: space-between;
 }
+
 /* line 106, sass/modules/_layout.scss */
 .secondary-cta-group .secondary-cta {
   position: relative;

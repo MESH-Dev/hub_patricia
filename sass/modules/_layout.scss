@@ -10,6 +10,7 @@
 	height: 805px;
 	background-color: $dark-navy;
 	color: $white;
+
 	.gate-spacer{
 		height: 100%;
 		@media screen and (max-width: 750px){
@@ -21,6 +22,13 @@
 	}
 	@media screen and (max-width: 750px){
 		padding: 40px;
+  }
+
+
+	&.wp-widget-plugin-box{
+		height:initial;
+		padding:1em;
+
 	}
 }
 
@@ -38,10 +46,16 @@
 	span{
 		color: $yellow-green;
 	}
+
 	h4{
 		@media screen and (max-width: 400px){
 			font-size: 2.6rem;
 		}
+
+	//SD Addition for widget
+	&.widget-textarea{
+		height:initial;
+
 	}
 }
 
