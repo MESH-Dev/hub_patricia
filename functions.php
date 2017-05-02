@@ -236,6 +236,8 @@ function sp_breadcrumb_args( $args ) {
 	$args['labels']['404'] = 'Not found: '; // Genesis 1.5 and later
 	return $args;
 
+}
+
 //Add options page
 if( function_exists('acf_add_options_page') ) {
 	
@@ -243,5 +245,9 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
-
+function loadup_scripts() {
+    wp_enqueue_script( 'sidr', CHILD_URL .'/js/jquery.sidr.min.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'mesh', CHILD_URL .'/js/main.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_style( 'sidr-style', CHILD_URL .'/css/jquery.sidr.bare.css', '1.0.0', true );
 }
+add_action( 'wp_enqueue_scripts', 'loadup_scripts' );

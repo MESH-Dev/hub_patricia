@@ -1,13 +1,13 @@
 jQuery(document).ready(function($){
 	var panelwidth = $('.secondary-cta').width();
 	$('.secondary-cta').css({'height':panelwidth + 'px'});
-});
+// });
 
-$('.sidr-trigger').sidr({
+$('.gateway-line').sidr({
       name: 'sidr-main',
-      source: '.main-navigation, .gateway-nav',
+      source: '.genesis-nav-menu, .gateway-nav',
       renaming: false,
-      side: 'right',
+      side: 'left',
       displace: false,  
       });
 });

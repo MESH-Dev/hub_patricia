@@ -1,31 +1,3 @@
-.site-header{
-	background: rgba(255,255,255,0.7);
-	.nav-primary{
-		background: none;
-	}
-}
-
-.home.page-template .site-header{
-	top: 40px;
-	position: absolute;
-}
-
-.gateway-line{
-	height: 40px;
-	background-color: $dark-navy;
-	padding: 5px;
-	a.social-nav-cta{
-		font-family: 'Neris-Bold', sans-serif;
-		font-size: 1.8rem;
-		color: $yellow-green;
-		float: right;
-		&:hover{
-			color: $white;
-			text-decoration: none;
-		}
-	}
-}
-
 .menu-primary{
 	li{
 		a{

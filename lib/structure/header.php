@@ -12,12 +12,14 @@
  * @since        1.0.0
  *
  */
-
-    ob_start();
-    add_action( 'genesis_before_header', 'mesh_before_header' );
-    function mesh_before_header(){
-        echo '<div class="gateway-line"><a class="social-nav-cta" href="">Take the first step →</a></div>';
-    }
-    ob_end_clean();
-
+ 	ob_start();
+	add_action( 'genesis_before_header', 'mesh_before_header' );
+	function mesh_before_header(){
+		echo '<nav class="gateway-line" style="background-color: #0F1C2D;">';
+		echo '<div class="wrap">';
+		echo '<p style="color:white;">This is the Gateway Line</p>';
+		echo '</div>';
+		echo'</nav>';
+	}
+	ob_end_clean();
 ?>
