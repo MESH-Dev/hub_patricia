@@ -1,3 +1,4 @@
+
 <?php 
 
 /* Template Name: Homepage Template*/
@@ -8,6 +9,7 @@ get_header();
 
 
 <main id="content" class="shaun">
+
 	<div class="container">
 		<div class="row">
 			<div class="gate-bg">
@@ -21,12 +23,6 @@ get_header();
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 								    <path d="M7 10l5 5 5-5z"/>
 								</svg>
-                <div class="dropdown-menu-type">
-                  <a href=""><h5>Help my community</h5></a>
-                  <a href=""><h5>Host an event</h5></a>
-                  <a href=""><h5>Be a better advocate</h5></a>
-                  <a href=""><h5>Strengthen my organization</h5></a>
-                </div>
 							</div>
 						</div>
 					</div>
@@ -41,10 +37,7 @@ get_header();
 								$callout_text = get_sub_field('callout_text');
 								$page_link = get_sub_field('page_link');;
 						?>
-						<div class="columns-4 secondary-cta" >
-              <h4><?php echo $callout_text; ?></h4>
-              <div class="screen" style="background-image: url('<?php echo $background_url; ?>')"></div>
-            </div>
+						<div class="columns-4 secondary-cta" style="background-image: url('<?php echo $background_url; ?>')"></div>
 						<?php endwhile; endif; ?>
 						<!-- <div class="columns-4 secondary-cta" style="background-image: url('https://source.unsplash.com/random?buildings')"></div>
 						<div class="columns-4 secondary-cta" style="background-image: url('https://source.unsplash.com/random?people')"></div> -->
