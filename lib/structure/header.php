@@ -12,10 +12,12 @@
  * @since        1.0.0
  *
  */
- 	ob_start();
-	add_action( 'genesis_before_header', 'mesh_before_header' );
-	function mesh_before_header(){
-		echo '<div class="gateway-line" style="background-color:cyan; height:80px;"></div>';
-	}
-	ob_end_clean();
+
+    ob_start();
+    add_action( 'genesis_before_header', 'mesh_before_header' );
+    function mesh_before_header(){
+        echo '<div class="gateway-line" style="background-color:cyan; height:80px;"></div>';
+    }
+    ob_end_clean();
+
 ?>

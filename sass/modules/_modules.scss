@@ -398,6 +398,10 @@ Structure and Layout
 	max-width: 1152px;
 }
 
+body.home .site-inner .wrap{
+	max-width: none;
+}
+
 .site-inner {
 	background: url(images/site-inner-bg.jpg) repeat-x bottom left #FFF;
 	clear: both;
