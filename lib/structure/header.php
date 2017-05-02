@@ -16,9 +16,11 @@
  	ob_start();
 	add_action( 'genesis_before_header', 'mesh_before_header' );
 	function mesh_before_header(){
-		echo '<nav class="gateway-line" style="background-color: #0F1C2D;">';
+		echo '<nav class="gateway-line">';
 		echo '<div class="wrap">';
-		echo '<p style="color:white;"><a class="social-nav-cta" href="">Take the first step →</a></p>';
+		//echo '<p style="color:white;">'
+		echo '<a class="social-nav-cta" href="#">Take the first step →</a>';
+		//echo '</p>';
 		echo '</div>';
 		echo'</nav>';
 	}

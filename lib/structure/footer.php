@@ -83,6 +83,6 @@ function wsm_child_do_footer() {
 		echo '</p>';
 	}	
 
-	echo '</div><script type="text/javascript" src="wp-content/themes/WVHub/main.js"></script><!-- end .footer-right -->';
+	 echo '</div><!-- end .footer-right -->';//<script type="text/javascript" src="wp-content/themes/WVHub/main.js"></script>
 
 }

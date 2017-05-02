@@ -6,7 +6,7 @@
 // }
 
 .gate-bg{
-	width: 100vw;
+	// width: 100vw;
 	height: 805px;
 	background-color: $dark-navy;
 	color: $white;
@@ -20,13 +20,14 @@
 	.container{
 		height: 100%;
 	}
+
 	@media screen and (max-width: 750px){
 		padding: 40px;
-  }
-
+  	}	
 
 	&.wp-widget-plugin-box{
 		height:initial;
+		width:initial;
 		padding:1em;
 
 	}
@@ -51,7 +52,7 @@
 		@media screen and (max-width: 400px){
 			font-size: 2.6rem;
 		}
-
+	}
 	//SD Addition for widget
 	&.widget-textarea{
 		height:initial;
