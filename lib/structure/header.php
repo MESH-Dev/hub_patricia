@@ -12,7 +12,6 @@
  * @since        1.0.0
  *
  */
-
  	ob_start();
 	add_action( 'genesis_before_header', 'mesh_before_header' );
 	
@@ -27,5 +26,4 @@
 		echo'</nav>';
 	}
 	ob_end_clean();
-
 ?>
