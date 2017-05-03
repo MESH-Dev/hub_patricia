@@ -3,18 +3,26 @@ jQuery(document).ready(function($){
 	// $('.secondary-cta').css({'height':panelwidth + 'px'});
 // });
 
-$('.gateway-line').sidr({
-      name: 'sidr-main',
-      source: '.genesis-nav-menu, .gateway-nav',
-      renaming: false,
-      side: 'left',
-      displace: false,  
-      });
+//Globals
+var windowW = $(window).width();
+
+// $('.gateway-line').sidr({
+//       name: 'sidr-main',
+//       source: '.genesis-nav-menu, .gateway-nav',
+//       renaming: false,
+//       side: 'left',
+//       displace: false,  
+//       });
 
 $(function(){
 	$('#dropdown-trigger').click(function(){
 		$('.dropdown-menu-type').slideToggle();
 	});
 });
+
+if (windowW > 1070){
+
+    $('.has-parallax').parallax("50%",.5);
+  }
 
 });

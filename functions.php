@@ -245,8 +245,10 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
+//Add additional jquery libraries/css files -- from MESH
 function loadup_scripts() {
     wp_enqueue_script( 'sidr', CHILD_URL .'/js/jquery.sidr.min.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'parallax', CHILD_URL .'/js/jquery.parallax-1.1.3.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script( 'mesh', CHILD_URL .'/js/main.js', array('jquery'), '1.0.0', true );
     wp_enqueue_style( 'sidr-style', CHILD_URL .'/css/jquery.sidr.bare.css', '1.0.0', true );
 }
