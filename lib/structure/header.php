@@ -15,11 +15,13 @@
 
  	ob_start();
 	add_action( 'genesis_before_header', 'mesh_before_header' );
+	
 	function mesh_before_header(){
+		$top_link = get_field('global_form_link', 'options');
 		echo '<nav class="gateway-line">';
 		echo '<div class="wrap">';
 		//echo '<p style="color:white;">'
-		echo '<a class="social-nav-cta" href="#">Take the first step →</a>';
+		echo '<a class="social-nav-cta" href="'.$top_link.'">Take the first step →</a>';
 		//echo '</p>';
 		echo '</div>';
 		echo'</nav>';
