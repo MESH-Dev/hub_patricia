@@ -8,10 +8,18 @@ get_header();
 
 
 <main id="content" class="shaun">
-	<div class="gate-bg">
+	<?php 
+		$background = get_field('wg_background_image');
+		$background_url = $background['sizes']['large'];
+		$callout_white_text = get_field('callout_text');
+		$callout_green = get_field('callout_green_text');
+		$dropdown = get_field('form_dropdowns');
+	?>
+	<div class="gate-bg has-parallax" style="background-image:url('<?php echo $background_url; ?>')">
 		<div class="container">
 			<div class="columns-2 gate-spacer"></div>
 			<div class="columns-6 gate-cta">
+				
 				<h4>The Hub exists to help West Virginia's communities most in need. Got some big ideas for your community? <span>We can help.</span></h4>
 				<div id="dropdown-trigger" class="cta-dropdown">
 					<h6>I'd like The Hub to help me...</h6>
@@ -19,10 +27,12 @@ get_header();
 					    <path d="M7 10l5 5 5-5z"/>
 					</svg>
 					<div class="dropdown-menu-type">
-						<a href=""><h5>Help my community</h5></a>
-						<a href=""><h5>Host an event</h5></a>
-						<a href=""><h5>Be a better advocate</h5></a>
-						<a href=""><h5>Strengthen my organization</h5></a>
+						<?php if(have_rows('form_dropdowns')):while(have_rows('form_dropdowns')):the_row();
+							$d_link_text=get_sub_field('label');
+							$d_link = get_sub_field('link');
+						?>
+						<a href="<?php echo $d_link; ?>"><h5><?php echo $d_link_text; ?></h5></a>
+						<?php endwhile; endif; ?>
 					</div>
 				</div>
 			</div>
@@ -32,14 +42,14 @@ get_header();
 		<div class="row">
 			<div class="secondary-cta-group">
 				<?php if (have_rows('callout_boxes')):while (have_rows('callout_boxes')):the_row();
-								$background = get_sub_field('cb_background_image');
-								$background_url = $background['sizes']['large'];
+								$background_cb = get_sub_field('cb_background_image');
+								$background_url_cb = $background_cb['sizes']['large'];
 								$callout_text = get_sub_field('callout_text');
 								$page_link = get_sub_field('page_link');;
 						?>
 							<div class="columns-4 secondary-cta">
-								<h4><?php echo $callout_text; ?></h4>
-              					<div class="screen" style="background-image: url('<?php echo $background_url; ?>')"></div>
+								<h4><a href="<?php echo $page_link ?>"><?php echo $callout_text; ?></a></h4>
+              					<div class="screen" style="background-image: url('<?php echo $background_url_cb; ?>')"></div>
 							</div>
 							<?php endwhile; endif; ?>
 			</div>

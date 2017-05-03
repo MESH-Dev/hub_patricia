@@ -8,8 +8,23 @@
 .gate-bg{
 	// width: 100vw;
 	height: 805px;
-	background-color: $dark-navy;
+	//Comment out for tests
+	//background-color: $dark-navy;
+	//New background, remove once we have an image
+	background-color:$dark-navy-rgb;
 	color: $white;
+
+	//From SD
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+	background-attachment:fixed;
+	background-blend-mode:multiply;
+	-webkit-backround-blend-mode:multiply;
+
+	@media ($bp-smaller-than-tablet){
+		background-attachment:initial !important;
+	}
 
 	.gate-spacer{
 		height: 100%;
@@ -29,7 +44,7 @@
 		height:initial;
 		width:initial;
 		padding:1em;
-
+		background-attachment: initial;
 	}
 }
 
@@ -69,6 +84,24 @@
 	color: $yellow-green;
 	padding: 12px;
 	cursor: pointer;
+
+	//Styling for the CTA widget
+	&.cta-widget{
+		h6{
+			font-size:1.5rem;
+		}
+
+		.widget-dropdown{
+			h5{
+				font-size:1.2rem;
+			}
+			a{
+				background:$dark-navy;
+			}
+		}
+	}
+	//++++++++++++++++++++++++++++
+
 	h6{
 		font-size: 2rem;
 		display: inline-block;
@@ -102,8 +135,10 @@
 		}
 		a{
 			display: block;
-			background-color: rgba(11, 28, 45, 0.8);
-			&:hover{
+			background-color: $dark-navy-rgb;
+			&:hover,
+			&:active,
+			&:focus{
 				background-color: $navy;
 				text-decoration: none;
 			}
@@ -160,9 +195,13 @@
 			// height: 100%;
 			// width: 100%;
 		}
-		&:hover h4{
-			color: $yellow-green;
-		}
+		&:hover,
+		&:active,
+		&:focus{
+			h4{
+				color: $yellow-green;
+			}
+		} 
 		@media screen and (max-width: 750px){
 			height: 200px;
 			margin: 0;
@@ -171,4 +210,9 @@
 	@media screen and (max-width: 750px){
 		display: initial;
 	}
+}
+
+//Form styles 
+.frm_pos_none{
+	display:none;
 }
