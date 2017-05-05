@@ -21,6 +21,9 @@ remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'wsm_child_do_footer' );
 function wsm_child_do_footer() {
 
+	$signup_leadin = get_field('es_leadin_text', 'options');
+	$cc_shortcode = get_field('cc_shortcode', 'options');
+	
 	echo '<div class="footer-left">';
 
 	echo '<form method="get" id="searchform" action="'. get_bloginfo('url') .'/">
@@ -69,21 +72,9 @@ function wsm_child_do_footer() {
 
 	// echo apply_filters( 'wsm_do_footer_nav', $nav_output, $nav, $args );
 
-	//Constant Contact form here
-	echo '<p class="signup-cta">Stay up-to-date with stories from all over West Virginia!</p><form method="get" id="emailform" action="'. get_bloginfo('url') .'/">
-			<div class="form input">
-				<label for="searchHeader" class="sr-only">Search the site</label>
-			<input id="searchHeader" class="hide" type="text" placeholder="Email" value="'.the_search_query() .'" name="s" id="s" /><button type="submit" class="form submit search-submit" id="searchsubmit" value="" >
-				<span class="sr-only">Submit search</span>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-				    <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"/>
-				</svg>
-			</button>			
-		</div>
-	</form>';
-	
-
-	//++++++++++++++++++++++++++++++
+	//Web Signup form shortcode
+	echo '<p>'.$signup_leadin.'</p>';
+	echo do_shortcode($cc_shortcode);
 
 	$credit= genesis_get_option( 'wsm_credit', 'patricia-settings' );
 
