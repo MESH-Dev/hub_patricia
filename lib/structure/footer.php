@@ -26,13 +26,14 @@ function wsm_child_do_footer() {
 	echo '<form method="get" id="searchform" action="'. get_bloginfo('url') .'/">
 			<div class="form input">
 				<label for="searchHeader" class="sr-only">Search the site</label>
-			<input id="searchHeader" class="hide" type="text" placeholder="Search the site..." value="'.the_search_query() .'" name="s" id="s" />
-			<div class="focus-bg"></div>
-			<button type="submit" class="form submit search-submit" id="searchsubmit" value="" >
+			<input id="searchHeader" class="hide" type="text" placeholder="Search..." value="'.the_search_query() .'" name="s" id="s" /><button type="submit" class="form submit search-submit" id="searchsubmit" value="" >
 				<span class="sr-only">Submit search</span>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				    <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"/>
+				</svg>
 			</button>			
 		</div>
-	</form>';
+	</form>';	
 
 	$contact = genesis_get_option( 'wsm_contact_info', 'patricia-settings' );
 
@@ -44,9 +45,8 @@ function wsm_child_do_footer() {
 
 	if ( !empty( $copyright ) ) {
 		echo '<p class="copy">&copy;'. date('Y') .' '. do_shortcode( genesis_get_option( 'wsm_copyright', 'patricia-settings' ) ) . '</p>';
-	}
+	}		
 
-	
 
 	echo '</div><!-- end .footer-left -->';
 
@@ -70,7 +70,17 @@ function wsm_child_do_footer() {
 	// echo apply_filters( 'wsm_do_footer_nav', $nav_output, $nav, $args );
 
 	//Constant Contact form here
-
+	echo '<p class="signup-cta">Stay up-to-date with stories from all over West Virginia!</p><form method="get" id="emailform" action="'. get_bloginfo('url') .'/">
+			<div class="form input">
+				<label for="searchHeader" class="sr-only">Search the site</label>
+			<input id="searchHeader" class="hide" type="text" placeholder="Email" value="'.the_search_query() .'" name="s" id="s" /><button type="submit" class="form submit search-submit" id="searchsubmit" value="" >
+				<span class="sr-only">Submit search</span>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				    <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"/>
+				</svg>
+			</button>			
+		</div>
+	</form>';
 	
 
 	//++++++++++++++++++++++++++++++
