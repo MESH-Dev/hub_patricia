@@ -17,6 +17,7 @@ var windowW = $(window).width();
 $(function(){
 	$('#dropdown-trigger').click(function(){
 		$('.dropdown-menu-type').slideToggle();
+		$('#dropdown-trigger').toggleClass('open');
 	});
 });
 

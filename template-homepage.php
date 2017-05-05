@@ -20,10 +20,11 @@ get_header();
 			<div class="columns-2 gate-spacer"></div>
 			<div class="columns-6 gate-cta">
 				
-				<h4>The Hub exists to help West Virginia's communities most in need. Got some big ideas for your community? <span>We can help.</span></h4>
+				<h4><?php echo $callout_white_text; ?> <span><?php echo $callout_green; ?></span></h4>
+
 				<div id="dropdown-trigger" class="cta-dropdown">
 					<h6>I'd like The Hub to help me...</h6>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<svg id="dropdown-indicator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 					    <path d="M7 10l5 5 5-5z"/>
 					</svg>
 					<div class="dropdown-menu-type">
@@ -49,7 +50,8 @@ get_header();
 						?>
 							<div class="columns-4 secondary-cta">
 								<h4><a href="<?php echo $page_link ?>"><?php echo $callout_text; ?></a></h4>
-              					<div class="screen" style="background-image: url('<?php echo $background_url_cb; ?>')"></div>
+								<div class="cta-filter"></div>
+              					<div class="cta-bg" style="background-image: url('<?php echo $background_url_cb; ?>')"></div>
 							</div>
 							<?php endwhile; endif; ?>
 			</div>
