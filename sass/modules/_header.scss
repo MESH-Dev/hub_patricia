@@ -1,8 +1,33 @@
+//Home & Global
 .site-header{
 	background: rgba(255,255,255,0.7);
 	.nav-primary{
 		background: none;
+		position: relative;
+		float: right;
+		height: 100px;
+		padding: 0;
+		box-shadow: none;
 	}
+	.header-image .site-title, .site-title a{
+		min-width: none;
+		min-height: none;
+		height: 100px;
+		width: 250px;
+	}
+	.title-area{
+		padding: 0;
+	}	
+	.header-image{
+		.title-area{
+			padding-top: 0px;
+		}
+	}
+	.site-title{
+		margin: 0;
+		background: url(images/logo.png) no-repeat left;
+		background-size: auto 70%;
+	}	
 }
 
 .home.page-template .site-header{
@@ -14,22 +39,69 @@
 	height: 40px;
 	background-color: $dark-navy;
 	padding: 5px;
+	text-align: right;
 	a.social-nav-cta{
 		font-family: 'Neris-Bold', sans-serif;
 		font-size: 1.8rem;
 		color: $yellow-green;
-		float: right;
+		vertical-align: middle;
+
 		&:hover{
 			color: $white;
 			text-decoration: none;
 		}
 	}
+	.social-icons{
+		display: inline-block;
+		margin: 0 20px;
+	}
+	a:hover{
+		path{
+			fill: $yellow-green;
+		}
+	}
+	svg{
+		display: inline-block;
+		height: 20px;
+		vertical-align: middle;
+		margin: 0 2px;
+	}
 }
 
 .menu-primary{
+	text-align: right;
+	padding: 0;
 	li{
+		margin: 0 0 0 20px;
+		font-family: 'Neris-Bold', sans-serif;
+		position: relative;
 		a{
 			padding: 10px;
+			&:hover{
+				text-decoration: none;
+				opacity: 0.7;
+			}
+		}
+	}
+	ul.sub-menu{
+		margin: 0;
+		width: 100%;
+		border-radius: 4px;
+		background-color: $navy;
+		padding: 4px 0;
+		li{
+			margin: 0;
+			display: block;
+			font-size: 1.4rem;
+			line-height: normal;
+			a{
+				border: 0px;
+				&:hover{
+					background-color: $dark-navy;
+					opacity: 1;
+				}
+			}
 		}
 	}
 }
+//Home & Global

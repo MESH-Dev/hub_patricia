@@ -1157,7 +1157,7 @@ Site Header
 	padding: 26px 30px 30px;
 	padding: 2.6rem 3rem 3rem;
 	position: relative;
-	width: auto;
+	// width: auto;
 	z-index: 9999;
 }
 
@@ -1172,8 +1172,8 @@ Site Header
 	font-size: 62px;
 	font-size: 6.2rem;
 	line-height: 1;
-	margin: 0 0 4px;
-	margin: 0 0 0.4rem;
+	// margin: 0 0 4px;
+	// margin: 0 0 0.4rem;
 	text-align: center;
 }
 
@@ -1208,22 +1208,22 @@ Site Header
 
 /* Logo, hide text */
 
-.header-image .title-area {
-	padding-top: 33px;
-	padding-top: 3.3rem;
-}
+// .header-image .title-area {
+// 	padding-top: 33px;
+// 	padding-top: 3.3rem;
+// }
 
-.header-image .site-title {
-	background: url(images/logo.png) no-repeat left;
-	padding: 0;
-background-size: 250px;
-}
+// .header-image .site-title {
+// 	// background: url(images/logo.png) no-repeat left;
+// 	padding: 0;
+// // background-size: 250px;
+// }
 
 .header-image .site-title,
 .header-image .site-title a {
 	float: left;
-	min-height: 98px;
-	min-width: 288px;
+	// min-height: 98px;
+	// min-width: 288px;
 }
 
 /* Widget Area
@@ -1296,9 +1296,9 @@ Site Navigation
 	color: #DDD;
 }
 
-.genesis-nav-menu > .menu-item > a {
-	text-transform: uppercase;
-}
+// .genesis-nav-menu > .menu-item > a {
+// 	// text-transform: uppercase;
+// }
 
 .genesis-nav-menu .sub-menu {
 	background-color: #0095d0;
@@ -1313,7 +1313,7 @@ Site Navigation
 	-ms-transition:     opacity .4s ease-in-out;
 	-o-transition:      opacity .4s ease-in-out;
 	transition:         opacity .4s ease-in-out;
-	width: 240px;
+	// width: 240px;
 	z-index: 99;
 }
 
@@ -1326,7 +1326,7 @@ Site Navigation
 	padding: 10px 20px;
 	padding: 1rem 2rem;
 	position: relative;
-	width: 240px;
+	// width: 240px;
 }
 
 .ie7 .genesis-nav-menu .sub-menu a {
@@ -1341,9 +1341,9 @@ Site Navigation
 	margin: -44px 0 0 239px;
 }
 
-.genesis-nav-menu .menu-item:hover {
-	position: static;
-}
+// .genesis-nav-menu .menu-item:hover {
+// 	position: static;
+// }
 
 .genesis-nav-menu .menu-item:hover > .sub-menu {
 	left: auto;
@@ -1429,8 +1429,8 @@ padding-top:20px;
 }
 
 .nav-primary .genesis-nav-menu {
-	padding-left: 310px;
-	width: auto;
+	// padding-left: 310px;
+	// width: auto;
 }
 
 .ie8 .nav-primary .genesis-nav-menu,
@@ -1438,11 +1438,11 @@ padding-top:20px;
 	padding-left: 330px;
 }
 
-.nav-primary a:hover,
-.nav-primary .current-menu-item > a {
-	background-color: #0095d0;
-	color: #FFF;
-}
+// .nav-primary a:hover,
+// .nav-primary .current-menu-item > a {
+// 	background-color: #0095d0;
+// 	color: #FFF;
+// }
 
 .nav-primary .sub-menu .current-menu-item > a
 .nav-primary .sub-menu a:hover {
@@ -2513,8 +2513,8 @@ Color Options
 .patricia-green .donate-btn a:hover,
 .patricia-green .home-slider .more-link a,
 .patricia-green  .genesis-nav-menu .sub-menu a,
-.patricia-green .nav-primary a:hover,
-.patricia-green .nav-primary .current-menu-item > a,
+/*.patricia-green .nav-primary a:hover,*/
+/*.patricia-green .nav-primary .current-menu-item > a,*/
 .patricia-green .comment-reply a {
 	color: #FFF;
 }
@@ -2529,8 +2529,8 @@ Color Options
 .patricia-green .entry-content .button,
 .patricia-green .wsm-cta .more-link a,
 .patricia-green .home-slider .more-link a,
-.patricia-green .nav-primary a:hover,
-.patricia-green .nav-primary .current-menu-item > a {
+/*.patricia-green .nav-primary a:hover,*/
+/*.patricia-green .nav-primary .current-menu-item > a*/ {
 	background-color: #A5B264;
 }
 
@@ -2542,7 +2542,7 @@ Color Options
 .patricia-green .button:hover,
 .patricia-green .wsm-cta .more-link a:hover,
 .patricia-green .home-slider .more-link a:hover,
-.patricia-green .genesis-nav-menu .sub-menu {
+/*.patricia-green .genesis-nav-menu .sub-menu*/ {
 	background-color: #a8b955;
 }
 
