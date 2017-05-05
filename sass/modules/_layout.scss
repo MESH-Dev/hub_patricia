@@ -142,7 +142,12 @@
 			font-weight: bold;
 			color: $yellow-green;
 		}
-		a{
+
+		label{
+			margin-bottom:0;
+		}
+
+		a, .frm_radio{
 			display: block;
 			background-color: $dark-navy-rgb;
 			&:hover,
@@ -249,7 +254,54 @@
 	display:none;
 }
 
-body.form-page{
+//__--Specific to Global Form
+
+.cta-dropdown.form-field{
+	//margin:1em 0;
+}
+
+.cta-dropdown-wrap{
+	margin:1em 0;
+}
+.frm_opt_container.dropdown-menu-type{
+	display:none;
+	// margin-top:-1em;
+	// margin-bottom:1em;
+	//position: absolute;
+	top: 110%;
+	left: 0;
+	width: 100%;
+	border-radius: 4px;
+	border: 2px solid $yellow-green;
+	color: $yellow-green;
+	z-index: 1;
+	.frm_radio{
+		display: block;
+		background-color: $dark-navy-rgb;
+		&:hover,
+		&:active,
+		&:focus{
+			background-color: $navy;
+			text-decoration: none;
+		}
+	}
+	input[type="radio"]{
+		display:none;
+	}
+	label{
+		font-size:2.2rem;
+		padding:10px;
+		font-weight: bold;
+	    font-family: 'Neris-LightItalic', sans-serif;
+	    margin-bottom:0;
+	}
+	input[type="radio"] + label span{
+
+	}
+
+}
+
+.page-template-template-form{
 	.site-inner{
 		.wrap{
 			max-width: none;
@@ -268,7 +320,7 @@ body.form-page{
 	}
 }
 
-form#form_7c0892{
+form.frm_pro_form{
 	label{
 		font-family: 'Arvo', sans-serif;
 		font-weight: 400;
@@ -318,5 +370,20 @@ form#form_7c0892{
 	@media screen and (max-width: 1200px){
 		padding: 0 40px;
 	}
+
+	.cta-dropdown.frm_form_field{
+		margin:0;
+	}
 }
-//Form Page
+
+//Accessibility
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
