@@ -6,19 +6,27 @@ jQuery(document).ready(function($){
 //Globals
 var windowW = $(window).width();
 
-// $('.gateway-line').sidr({
-//       name: 'sidr-main',
-//       source: '.genesis-nav-menu, .gateway-nav',
-//       renaming: false,
-//       side: 'left',
-//       displace: false,  
-//       });
+$('#mobile-menu-trigger').sidr({
+      name: 'sidr-main',
+      source: '.close-wrap, .genesis-nav-menu, .gateway-line .wrap',
+      renaming: false,
+      side: 'right',
+      displace: false,  
+      });
+
+$('.close-sidr').click(function(){
+	$.sidr('close', 'sidr-main');
+});
 
 
 	$('#dropdown-trigger:not(.form-field)').click(function(){
 		$('.dropdown-menu-type').slideToggle();
 		$('#dropdown-trigger').toggleClass('open');
 	});
+
+$('.frm_opt_container input').click(function(){
+	$(this).parent().toggleClass('checked');
+});
 
 var $ctr=0;
 	$('.cta-dropdown.form-field').click(function(){

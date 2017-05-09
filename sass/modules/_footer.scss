@@ -14,6 +14,7 @@
 				font-family: 'Neris-Light', sans-serif;
 				display: inline-block;
 				width: 90%;
+				padding-left: 0px;
 				&::-webkit-input-placeholder {
 				  color: $white;
 				}
@@ -29,18 +30,17 @@
 			}
 			button#searchsubmit{
 				position: absolute;
+				right: 0;
 				bottom: 0;
 				background: none;
+				padding: 0;
 				display: inline-block;
-				vertical-align: baseline;
-				padding: 7px;
 				border: none;
-				svg{
-					height: 24px;
-					fill: $white;
-					-webkit-transform: rotate(180deg);
-					transform: rotate(180deg);
-				}
+				font-family: 'Neris-Regular', sans-serif;
+				font-size: 2.4rem;
+				line-height: 30px;
+				width: auto;
+				right: 0;
 			}
 		}
 	}
@@ -49,13 +49,13 @@
 		.signup-cta{
 			font-family: 'Neris-Bold', sans-serif;
 		}
-		#emailform{
+		.signup-leadin{
+			font-family: 'Neris-Bold', sans-serif;
+		}
+		form{
 			margin: 10px 0;
-			.form{
+			input[type="text"]{
 				position: relative;
-				border-bottom: 2px solid $yellow-green;
-			}
-			#searchHeader{
 				background: none;
 				color: $white;
 				border: none;
@@ -73,22 +73,25 @@
 				}
 				&:-moz-placeholder {
 				  color: $white;
-				}
+				}			
 			}
-			button#searchsubmit{
+			.cc_email_address{
+				border-bottom: 2px solid $yellow-green;
+			}
+			#searchHeader{
+			}
+			input[type="submit"]{
+				font-family: "Neris-Regular", sans-serif;
+				font-size: 24px;
+				line-height: 24px;
 				position: absolute;
-				bottom: 0;
+				top: 0;
+				right: 0;
 				background: none;
 				display: inline-block;
-				vertical-align: baseline;
-				padding: 7px;
+				vertical-align: middle;
+				padding: 0px;
 				border: none;
-				svg{
-					height: 24px;
-					fill: $white;
-					-webkit-transform: rotate(180deg);
-					transform: rotate(180deg);
-				}
 			}
 		}
 	}
