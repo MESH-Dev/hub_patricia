@@ -5445,25 +5445,25 @@ form.frm_pro_form button:hover {
   }
 }
 /* line 408, sass/modules/_layout.scss */
-form.frm_pro_form .frm_opt_container {
+form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) {
   margin-top: 20px;
 }
 /* line 410, sass/modules/_layout.scss */
-form.frm_pro_form .frm_opt_container input[type="checkbox"] {
+form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) input[type="checkbox"] {
   position: absolute;
   z-index: -100;
   opacity: 0;
   width: 0px;
 }
 /* line 416, sass/modules/_layout.scss */
-form.frm_pro_form .frm_opt_container label {
+form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label {
   display: block;
   position: relative;
   cursor: pointer;
   margin-bottom: 10px;
 }
 /* line 421, sass/modules/_layout.scss */
-form.frm_pro_form .frm_opt_container label::before {
+form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label::before {
   content: '';
   margin-right: 10px;
   display: inline-block;
@@ -5475,7 +5475,7 @@ form.frm_pro_form .frm_opt_container label::before {
   vertical-align: middle;
 }
 /* line 432, sass/modules/_layout.scss */
-form.frm_pro_form .frm_opt_container label::after {
+form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label::after {
   content: '';
   height: 20px;
   width: 20px;
@@ -5487,7 +5487,7 @@ form.frm_pro_form .frm_opt_container label::after {
   display: none;
 }
 /* line 444, sass/modules/_layout.scss */
-form.frm_pro_form .frm_opt_container label.checked::after {
+form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label.checked::after {
   display: block;
 }
 
