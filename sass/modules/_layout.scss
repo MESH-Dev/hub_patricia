@@ -310,6 +310,9 @@
 			max-width: none;
 		}
 		@media screen and (max-width: 1200px){
+			padding: 0 100px;
+		}
+		@media screen and ($bp-smaller-than-tablet){
 			padding: 0 40px;
 		}
 	}
