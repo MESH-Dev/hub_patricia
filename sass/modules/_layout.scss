@@ -405,7 +405,7 @@ form.frm_pro_form{
 			width: 100%;
 		}
 	}
-	.frm_opt_container{
+	.frm_opt_container:not(.dropdown-menu-type){
 		margin-top: 20px;
 		input[type="checkbox"]{
 			position: absolute;
