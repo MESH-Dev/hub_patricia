@@ -37,4 +37,14 @@
 		echo'</nav>';
 	}
 	ob_end_clean();
+
+	add_action('genesis_header', 'mesh_mobile_header');
+    function mesh_mobile_header(){
+        echo '<div class="close-wrap"><div class="close-container"><a class="close-sidr">Close</a></div></div>';
+    }
+
+	add_action( 'genesis_after_header', 'mesh_after_header' );	
+	function mesh_after_header(){
+		echo '<div class="mobile-header"><a class="mobile-nav-home" href="http://wvhub.org"><img src="'.CHILD_URL.'/images/thehub_favicon.png"></a><a id="mobile-menu-trigger">Menu</a></div>';
+	}
 ?>

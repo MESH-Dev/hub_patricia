@@ -1231,7 +1231,7 @@ Site Header
 
 .site-header .widget-area {
 	float: right;
-	width: 800px;
+	width: 780px;
 }
 
 .header-image .site-header .widget-area {
@@ -3158,13 +3158,13 @@ Media Queries
 		margin: 0 auto;
 	}	
 
-	.site-header .widget-area {
-		clear: both;
-		display: block;
-		float: none;
-		margin: 20px 0 0;
-		margin: 2rem 0 0;
-	}
+	// .site-header .widget-area {
+	// 	clear: both;
+	// 	display: block;
+	// 	float: none;
+	// 	margin: 20px 0 0;
+	// 	margin: 2rem 0 0;
+	// }
 
 	.nav-primary,
 	.home .site-header {
