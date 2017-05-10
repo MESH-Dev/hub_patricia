@@ -389,6 +389,9 @@ form.frm_pro_form{
 	.frm_form_fields{
 		fieldset{
 			border: 0px;
+			.cta-dropdown-wrap{
+				margin-bottom: 40px;
+			}
 		}
 	}
 	button{
