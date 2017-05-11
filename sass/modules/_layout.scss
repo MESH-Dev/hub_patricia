@@ -331,6 +331,32 @@
 	}
 }
 
+.frm_error_style, .frm_error{
+	font-family: 'Neris-Regular', sans-serif;
+	font-size: 2rem;
+	color: $red;
+	padding: 10px;
+	margin: 10px 0;
+	background-color: rgba(255,255,255,0.7);
+	p{
+		color: $red;
+		font-size: 2rem;
+		margin: 0;
+	}
+}
+
+.frm_forms{
+	.frm_message p{
+		color: $white;
+		font-size: 2.4rem;
+		max-width: 960px;
+		margin: 40px 0;
+		@media screen and ($bp-smaller-than-tablet){
+			font-size: 2rem;
+		}
+	}
+}
+
 form.frm_pro_form{
 	label{
 		font-family: 'Arvo', sans-serif;

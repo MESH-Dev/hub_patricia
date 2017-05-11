@@ -5400,14 +5400,44 @@ Media Queries
   }
 }
 
-/* line 335, sass/modules/_layout.scss */
+/* line 334, sass/modules/_layout.scss */
+.frm_error_style, .frm_error {
+  font-family: 'Neris-Regular', sans-serif;
+  font-size: 2rem;
+  color: #a42126;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* line 341, sass/modules/_layout.scss */
+.frm_error_style p, .frm_error p {
+  color: #a42126;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* line 349, sass/modules/_layout.scss */
+.frm_forms .frm_message p {
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  max-width: 960px;
+  margin: 40px 0;
+}
+@media screen and (max-width: 750px) {
+  /* line 349, sass/modules/_layout.scss */
+  .frm_forms .frm_message p {
+    font-size: 2rem;
+  }
+}
+
+/* line 361, sass/modules/_layout.scss */
 form.frm_pro_form label {
   font-family: 'Arvo', sans-serif;
   font-weight: 400;
   font-size: 2.4rem;
   color: #D0E873;
 }
-/* line 341, sass/modules/_layout.scss */
+/* line 367, sass/modules/_layout.scss */
 form.frm_pro_form input[type="text"], form.frm_pro_form input[type="email"] {
   background: transparent;
   font-family: "Neris-Light", sans-serif;
@@ -5421,33 +5451,33 @@ form.frm_pro_form input[type="text"], form.frm_pro_form input[type="email"] {
   font-size: 1.8rem;
   height: 44px;
 }
-/* line 353, sass/modules/_layout.scss */
+/* line 379, sass/modules/_layout.scss */
 form.frm_pro_form input[type="text"]::-webkit-input-placeholder, form.frm_pro_form input[type="email"]::-webkit-input-placeholder {
   color: #FFFFFF;
 }
-/* line 356, sass/modules/_layout.scss */
+/* line 382, sass/modules/_layout.scss */
 form.frm_pro_form input[type="text"]::-moz-placeholder, form.frm_pro_form input[type="email"]::-moz-placeholder {
   color: #FFFFFF;
 }
-/* line 359, sass/modules/_layout.scss */
+/* line 385, sass/modules/_layout.scss */
 form.frm_pro_form input[type="text"]:-ms-input-placeholder, form.frm_pro_form input[type="email"]:-ms-input-placeholder {
   color: #FFFFFF;
 }
-/* line 362, sass/modules/_layout.scss */
+/* line 388, sass/modules/_layout.scss */
 form.frm_pro_form input[type="text"]:-moz-placeholder, form.frm_pro_form input[type="email"]:-moz-placeholder {
   color: #FFFFFF;
 }
-/* line 366, sass/modules/_layout.scss */
+/* line 392, sass/modules/_layout.scss */
 form.frm_pro_form .frm_form_field {
   margin: 0 0 40px 0;
 }
-/* line 370, sass/modules/_layout.scss */
+/* line 396, sass/modules/_layout.scss */
 form.frm_pro_form .frm_opt_container label {
   font-family: 'Neris-Light', sans-serif;
   font-size: 2rem;
   color: #FFFFFF;
 }
-/* line 376, sass/modules/_layout.scss */
+/* line 402, sass/modules/_layout.scss */
 form.frm_pro_form textarea {
   font-family: 'Neris-Light', sans-serif;
   font-size: 1.8rem;
@@ -5457,19 +5487,19 @@ form.frm_pro_form textarea {
   resize: none;
   color: #FFFFFF;
 }
-/* line 386, sass/modules/_layout.scss */
+/* line 412, sass/modules/_layout.scss */
 form.frm_pro_form .cta-dropdown.frm_form_field {
   margin: 0;
 }
-/* line 390, sass/modules/_layout.scss */
+/* line 416, sass/modules/_layout.scss */
 form.frm_pro_form .frm_form_fields fieldset {
   border: 0px;
 }
-/* line 392, sass/modules/_layout.scss */
+/* line 418, sass/modules/_layout.scss */
 form.frm_pro_form .frm_form_fields fieldset .cta-dropdown-wrap {
   margin-bottom: 40px;
 }
-/* line 397, sass/modules/_layout.scss */
+/* line 423, sass/modules/_layout.scss */
 form.frm_pro_form button {
   background-color: #0B1C2D;
   height: 44px;
@@ -5477,36 +5507,36 @@ form.frm_pro_form button {
   color: #FFFFFF;
   border-radius: 10px;
 }
-/* line 403, sass/modules/_layout.scss */
+/* line 429, sass/modules/_layout.scss */
 form.frm_pro_form button:hover {
   color: #D0E873;
   background-color: #0B1C2D;
 }
 @media screen and (max-width: 750px) {
-  /* line 397, sass/modules/_layout.scss */
+  /* line 423, sass/modules/_layout.scss */
   form.frm_pro_form button {
     width: 100%;
   }
 }
-/* line 411, sass/modules/_layout.scss */
+/* line 437, sass/modules/_layout.scss */
 form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) {
   margin-top: 20px;
 }
-/* line 413, sass/modules/_layout.scss */
+/* line 439, sass/modules/_layout.scss */
 form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) input[type="checkbox"] {
   position: absolute;
   z-index: -100;
   opacity: 0;
   width: 0px;
 }
-/* line 419, sass/modules/_layout.scss */
+/* line 445, sass/modules/_layout.scss */
 form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label {
   display: block;
   position: relative;
   cursor: pointer;
   margin-bottom: 10px;
 }
-/* line 424, sass/modules/_layout.scss */
+/* line 450, sass/modules/_layout.scss */
 form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label::before {
   content: '';
   margin-right: 10px;
@@ -5518,7 +5548,7 @@ form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label::before {
   border-radius: 6px;
   vertical-align: middle;
 }
-/* line 435, sass/modules/_layout.scss */
+/* line 461, sass/modules/_layout.scss */
 form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label::after {
   content: '';
   height: 20px;
@@ -5530,12 +5560,12 @@ form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label::after {
   left: 10px;
   display: none;
 }
-/* line 447, sass/modules/_layout.scss */
+/* line 473, sass/modules/_layout.scss */
 form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label.checked::after {
   display: block;
 }
 
-/* line 462, sass/modules/_layout.scss */
+/* line 488, sass/modules/_layout.scss */
 .sr-only {
   position: absolute;
   width: 1px;
