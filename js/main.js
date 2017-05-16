@@ -11,7 +11,7 @@ $('#mobile-menu-trigger').sidr({
       source: '.close-wrap, .genesis-nav-menu, .gateway-line .wrap',
       renaming: false,
       side: 'right',
-      displace: false,  
+      displace: false,
       });
 
 $('.close-sidr').click(function(){
@@ -19,10 +19,16 @@ $('.close-sidr').click(function(){
 });
 
 
-	$('#dropdown-trigger:not(.form-field)').click(function(){
-		$('.dropdown-menu-type').slideToggle();
-		$('#dropdown-trigger').toggleClass('open');
-	});
+$('#dropdown-trigger:not(.form-field)').click(function(){
+	$('.dropdown-menu-type').slideToggle();
+	$('#dropdown-trigger').toggleClass('open');
+});
+
+$('.sidr-inner .menu-item-has-children').click(function(event){
+	event.preventDefault();
+	event.stopPropagation();
+	$(this).toggleClass('open');
+});
 
 $('.frm_opt_container input').click(function(){
 	$(this).parent().toggleClass('checked');
@@ -30,7 +36,7 @@ $('.frm_opt_container input').click(function(){
 
 var $ctr=0;
 	$('.cta-dropdown.form-field').click(function(){
-		
+
 		//$ctr=0;
 		$ctr++;
 		if($ctr == 1){
@@ -42,7 +48,7 @@ var $ctr=0;
 		$('.dropdown-menu-type input[type="radio"').click(function(){
 			$('.dropdown-menu-type').delay(200).slideUp('fast');
 			});
-		
+
 	});
 
 //This doesn't work very well, loads well after the page loads, may need to create a new template just for these forms.
