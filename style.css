@@ -1013,25 +1013,41 @@ td:last-child {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #2A3E52;
 }
-/* line 118, sass/modules/_header.scss */
+/* line 119, sass/modules/_header.scss */
+.menu-primary .menu-item-has-children .menu-item-has-children > a::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #FFFFFF;
+  margin-left: 6px;
+  transform: rotate(270deg) translateY(-50%);
+}
+/* line 135, sass/modules/_header.scss */
 .menu-primary .menu-item-has-children .menu-item-has-children .sub-menu {
   margin: 0;
   position: absolute;
   top: 0;
   left: 100%;
 }
-/* line 123, sass/modules/_header.scss */
+/* line 140, sass/modules/_header.scss */
 .menu-primary .menu-item-has-children .menu-item-has-children .sub-menu::before {
   content: '';
   width: 0;
   height: 0;
   border: 0px;
 }
-/* line 131, sass/modules/_header.scss */
+/* line 148, sass/modules/_header.scss */
 .menu-primary .menu-item-has-children .menu-item-has-children:hover .sub-menu {
   left: 100%;
 }
-/* line 137, sass/modules/_header.scss */
+/* line 154, sass/modules/_header.scss */
 .menu-primary ul.sub-menu {
   margin: 0;
   width: 100%;
@@ -1039,40 +1055,40 @@ td:last-child {
   background-color: #2A3E52;
   padding: 4px 0;
 }
-/* line 143, sass/modules/_header.scss */
+/* line 160, sass/modules/_header.scss */
 .menu-primary ul.sub-menu li {
   margin: 0;
   display: block;
   font-size: 1.4rem;
   line-height: normal;
 }
-/* line 148, sass/modules/_header.scss */
+/* line 165, sass/modules/_header.scss */
 .menu-primary ul.sub-menu li a {
   border: 0px;
 }
-/* line 150, sass/modules/_header.scss */
+/* line 167, sass/modules/_header.scss */
 .menu-primary ul.sub-menu li a:hover {
   background-color: #0B1C2D;
   opacity: 1;
 }
 
-/* line 159, sass/modules/_header.scss */
+/* line 176, sass/modules/_header.scss */
 .mobile-header {
   position: relative;
   height: 100px;
   display: none;
 }
-/* line 163, sass/modules/_header.scss */
+/* line 180, sass/modules/_header.scss */
 .mobile-header .mobile-nav-home {
   position: absolute;
   top: 22px;
   left: 40px;
 }
-/* line 167, sass/modules/_header.scss */
+/* line 184, sass/modules/_header.scss */
 .mobile-header .mobile-nav-home img {
   height: 60px;
 }
-/* line 171, sass/modules/_header.scss */
+/* line 188, sass/modules/_header.scss */
 .mobile-header #mobile-menu-trigger {
   font-family: 'Neris-Regular', sans-serif;
   font-size: 1.8rem;
@@ -1088,30 +1104,30 @@ td:last-child {
   padding: 10px;
   cursor: pointer;
 }
-/* line 185, sass/modules/_header.scss */
+/* line 202, sass/modules/_header.scss */
 .mobile-header #mobile-menu-trigger:hover {
   text-decoration: none;
 }
 @media screen and (max-width: 1022px) {
-  /* line 159, sass/modules/_header.scss */
+  /* line 176, sass/modules/_header.scss */
   .mobile-header {
     display: block;
   }
 }
 
-/* line 194, sass/modules/_header.scss */
+/* line 211, sass/modules/_header.scss */
 body.home.page-template .mobile-header {
   height: auto;
 }
 
-/* line 199, sass/modules/_header.scss */
+/* line 216, sass/modules/_header.scss */
 .close-container {
   display: none;
   width: 100%;
   height: 80px;
 }
 
-/* line 204, sass/modules/_header.scss */
+/* line 221, sass/modules/_header.scss */
 .close-sidr {
   display: none;
   font-family: 'Neris-Regular', sans-serif;
@@ -1129,111 +1145,129 @@ body.home.page-template .mobile-header {
   cursor: pointer;
 }
 
-/* line 221, sass/modules/_header.scss */
+/* line 238, sass/modules/_header.scss */
 #sidr-main {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   font-family: 'Neris-Bold', sans-serif;
 }
-/* line 224, sass/modules/_header.scss */
+/* line 241, sass/modules/_header.scss */
 #sidr-main .sidr-inner:first-of-type {
   margin-bottom: 20px;
 }
-/* line 227, sass/modules/_header.scss */
+/* line 244, sass/modules/_header.scss */
 #sidr-main a {
   color: #0B1C2D;
 }
-/* line 229, sass/modules/_header.scss */
+/* line 246, sass/modules/_header.scss */
 #sidr-main a:hover {
   text-decoration: none;
 }
-/* line 233, sass/modules/_header.scss */
+/* line 250, sass/modules/_header.scss */
 #sidr-main .close-container {
   display: block;
 }
-/* line 236, sass/modules/_header.scss */
+/* line 253, sass/modules/_header.scss */
 #sidr-main .close-sidr {
   display: block;
   color: #FFFFFF;
 }
-/* line 239, sass/modules/_header.scss */
+/* line 256, sass/modules/_header.scss */
 #sidr-main .close-sidr:hover {
   color: #FFFFFF;
   text-decoration: none;
 }
-/* line 244, sass/modules/_header.scss */
+/* line 261, sass/modules/_header.scss */
 #sidr-main li {
   list-style: none;
   width: 100%;
   display: block;
   margin-bottom: 0px;
 }
-/* line 249, sass/modules/_header.scss */
+/* line 266, sass/modules/_header.scss */
 #sidr-main li > a {
   padding-left: 10px;
   line-height: 44px;
 }
-/* line 253, sass/modules/_header.scss */
+/* line 270, sass/modules/_header.scss */
 #sidr-main li ul {
-  background-color: #0B1C2D;
   margin-bottom: 0px;
 }
-/* line 254, sass/modules/_header.scss */
+/* line 271, sass/modules/_header.scss */
 #sidr-main li ul.sub-menu {
   display: none;
 }
-/* line 259, sass/modules/_header.scss */
+/* line 275, sass/modules/_header.scss */
 #sidr-main li ul a {
   color: #FFFFFF;
 }
-/* line 262, sass/modules/_header.scss */
+/* line 278, sass/modules/_header.scss */
+#sidr-main li ul li {
+  background-color: #0B1C2D;
+}
+/* line 281, sass/modules/_header.scss */
 #sidr-main li ul ul {
-  background-color: #2A3E52;
   margin: 0px;
 }
-/* line 265, sass/modules/_header.scss */
+/* line 283, sass/modules/_header.scss */
 #sidr-main li ul ul a {
   color: #D0E873;
 }
-/* line 273, sass/modules/_header.scss */
-#sidr-main .menu-item-has-children > a::after {
-  content: url("images/materialarrow.svg");
-  display: inline-block;
-  height: 30px;
-  fill: #0B1C2D;
-  vertical-align: middle;
+/* line 286, sass/modules/_header.scss */
+#sidr-main li ul ul li {
+  background-color: #2A3E52;
 }
-/* line 281, sass/modules/_header.scss */
+/* line 294, sass/modules/_header.scss */
+#sidr-main .menu-item-has-children > a::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #0B1C2D;
+  margin-left: 6px;
+}
+/* line 306, sass/modules/_header.scss */
 #sidr-main .menu-item-has-children > ul li a {
   padding-left: 20px;
 }
-/* line 286, sass/modules/_header.scss */
-#sidr-main .menu-item-has-children > .menu-item-has-children > a::after {
-  fill: #FFFFFF;
+/* line 311, sass/modules/_header.scss */
+#sidr-main .menu-item-has-children .menu-item-has-children > a::after {
+  border-top-color: #FFFFFF;
 }
-/* line 290, sass/modules/_header.scss */
-#sidr-main .menu-item-has-children > .menu-item-has-children ul li a {
+/* line 315, sass/modules/_header.scss */
+#sidr-main .menu-item-has-children .menu-item-has-children ul li a {
   padding-left: 30px;
 }
-/* line 295, sass/modules/_header.scss */
+/* line 320, sass/modules/_header.scss */
+#sidr-main .menu-item-has-children.open > .sub-menu {
+  display: initial;
+}
+/* line 323, sass/modules/_header.scss */
+#sidr-main .menu-item-has-children.open > a::after {
+  transform: rotate(180deg);
+}
+/* line 328, sass/modules/_header.scss */
 #sidr-main .social-nav-cta {
   padding-left: 10px;
   font-size: 1.8rem;
   color: #74ACC7;
 }
-/* line 300, sass/modules/_header.scss */
+/* line 333, sass/modules/_header.scss */
 #sidr-main .social-icons {
   padding-left: 10px;
   margin-top: 10px;
 }
-/* line 303, sass/modules/_header.scss */
+/* line 336, sass/modules/_header.scss */
 #sidr-main .social-icons a {
   margin-right: 10px;
 }
-/* line 306, sass/modules/_header.scss */
+/* line 339, sass/modules/_header.scss */
 #sidr-main .social-icons svg {
   height: 30px;
 }
-/* line 308, sass/modules/_header.scss */
+/* line 341, sass/modules/_header.scss */
 #sidr-main .social-icons svg path, #sidr-main .social-icons svg polygon {
   fill: #0B1C2D;
 }
