@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Header Functions
  *
@@ -14,7 +14,7 @@
  */
  	ob_start();
 	add_action( 'genesis_before_header', 'mesh_before_header' );
-	
+
 	function mesh_before_header(){
 		$top_link = get_field('global_form_link', 'options');
 		echo '<nav class="gateway-line">';
@@ -29,8 +29,8 @@
 		echo '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.65 49.65"><defs><style>.cls-1{fill:#fff;}</style></defs><title>003-facebook-logo-button</title><path class="cls-1" d="M24.83,0A24.83,24.83,0,1,0,49.65,24.83,24.85,24.85,0,0,0,24.83,0ZM31,25.7H27V40.1H21V25.7H18.13V20.61H21V17.32c0-2.36,1.12-6,6-6l4.43,0v4.94H28.23A1.22,1.22,0,0,0,27,17.62v3h4.56Z"/></svg>';
 		echo '</a>';
 		echo '<a href="">';
-		echo '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.65 49.65"><defs><style>.cls-1{fill:#fff;}</style></defs><title>001-instagram-logo</title><path class="cls-1" d="M24.83,29.8a5,5,0,1,0-5-5A5,5,0,0,0,24.83,29.8Z"/><polygon class="cls-1" points="35.68 18.75 35.68 14.58 35.68 13.96 35.05 13.96 30.89 13.97 30.91 18.76 35.68 18.75"/><path class="cls-1" d="M24.83,0A24.83,24.83,0,1,0,49.65,24.83,24.85,24.85,0,0,0,24.83,0ZM38.94,21.93V33.49a5.46,5.46,0,0,1-5.46,5.46H16.16a5.46,5.46,0,0,1-5.46-5.46V16.17a5.46,5.46,0,0,1,5.46-5.46H33.49a5.46,5.46,0,0,1,5.46,5.46Z"/><path class="cls-1" d="M32.55,24.83a7.72,7.72,0,1,1-14.88-2.9H13.46V33.49a2.71,2.71,0,0,0,2.71,2.7H33.49a2.71,2.71,0,0,0,2.71-2.7V21.93H32A7.62,7.62,0,0,1,32.55,24.83Z"/></svg>';	
-		echo '</a>';	
+		echo '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.65 49.65"><defs><style>.cls-1{fill:#fff;}</style></defs><title>001-instagram-logo</title><path class="cls-1" d="M24.83,29.8a5,5,0,1,0-5-5A5,5,0,0,0,24.83,29.8Z"/><polygon class="cls-1" points="35.68 18.75 35.68 14.58 35.68 13.96 35.05 13.96 30.89 13.97 30.91 18.76 35.68 18.75"/><path class="cls-1" d="M24.83,0A24.83,24.83,0,1,0,49.65,24.83,24.85,24.85,0,0,0,24.83,0ZM38.94,21.93V33.49a5.46,5.46,0,0,1-5.46,5.46H16.16a5.46,5.46,0,0,1-5.46-5.46V16.17a5.46,5.46,0,0,1,5.46-5.46H33.49a5.46,5.46,0,0,1,5.46,5.46Z"/><path class="cls-1" d="M32.55,24.83a7.72,7.72,0,1,1-14.88-2.9H13.46V33.49a2.71,2.71,0,0,0,2.71,2.7H33.49a2.71,2.71,0,0,0,2.71-2.7V21.93H32A7.62,7.62,0,0,1,32.55,24.83Z"/></svg>';
+		echo '</a>';
 		echo '</div>';
 		//echo '</p>';
 		echo '</div>';
@@ -43,8 +43,22 @@
         echo '<div class="close-wrap"><div class="close-container"><a class="close-sidr">Close</a></div></div>';
     }
 
-	add_action( 'genesis_after_header', 'mesh_after_header' );	
+	add_action( 'genesis_after_header', 'mesh_after_header' );
 	function mesh_after_header(){
 		echo '<div class="mobile-header"><a class="mobile-nav-home" href="http://wvhub.org"><img src="'.CHILD_URL.'/images/thehub_favicon.png"></a><a id="mobile-menu-trigger">Menu</a></div>';
 	}
+
+   function hook_bugherd() {
+       ?>
+       <script type='text/javascript'>
+       (function (d, t) {
+         var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+         bh.type = 'text/javascript';
+         bh.src = 'https://www.bugherd.com/sidebarv2.js?apikey=sevnwal2di2eixkqxd7zxg';
+         s.parentNode.insertBefore(bh, s);
+         })(document, 'script');
+       </script>
+       <?php
+   }
+   add_action('wp_head', 'hook_bugherd');
 ?>
