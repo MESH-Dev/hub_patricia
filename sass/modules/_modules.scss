@@ -1,16 +1,16 @@
 /*
 	Theme Name: WV Hub - Patricia Update
 	Notes: Only make changes to this Template!  Avoid making any changes to Genesis(Parent) Theme
-	Description: Patricia is a non-profit WordPress theme designed for charity organizations. This Genesis child theme has six color options, lots of features, and it is SEO friendly. 
+	Description: Patricia is a non-profit WordPress theme designed for charity organizations. This Genesis child theme has six color options, lots of features, and it is SEO friendly.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
 	Version: 1.1.0
 
 	Template: genesis
-	
+
 	License: GPL-2.0+
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
-	
+
 */
 
 /*
@@ -30,7 +30,7 @@ HTML5 Reset
 	normalize.css v2.1.2 | MIT License | git.io/normalize
 --------------------------------------------- */
 
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 
 /* Box Sizing
 --------------------------------------------- */
@@ -705,9 +705,9 @@ img.alignleft {
 --------------------------------------------- */
 
 .entry-title {
-	font-size: 22px;
-	font-size: 2.2rem;
-	font-weight: 400;
+	// font-size: 22px;
+	// font-size: 2.2rem;
+	// font-weight: 400;
 	line-height: 1;
 }
 
@@ -1075,7 +1075,7 @@ img#wpstats {
 
 
 /*
-WP Table 
+WP Table
 ---------------------------- */
 
 h2.tablepress-table-name {
@@ -1136,7 +1136,7 @@ Site Header
 	top: 0;
 	width: 100%;
 }
-	
+
 
 .site-header .wrap {
 	padding: 0;
@@ -1483,11 +1483,11 @@ Content Area
 }
 
 .home-top .more-link a {
-	background-image: -webkit-linear-gradient(top, #0094CE 0%, #007EB0 100%);  
-    background-image: -moz-linear-gradient(top, #0094CE 0%, #007EB0 100%);  
-    background-image: -ms-linear-gradient(top, #0094CE 0%, #007EB0 100%);  
-    background-image: -o-linear-gradient(top, #0094CE 0%, #007EB0 100%);  
-    background-image: linear-gradient(top, #0094CE 0%, #007EB0 100%); 
+	background-image: -webkit-linear-gradient(top, #0094CE 0%, #007EB0 100%);
+    background-image: -moz-linear-gradient(top, #0094CE 0%, #007EB0 100%);
+    background-image: -ms-linear-gradient(top, #0094CE 0%, #007EB0 100%);
+    background-image: -o-linear-gradient(top, #0094CE 0%, #007EB0 100%);
+    background-image: linear-gradient(top, #0094CE 0%, #007EB0 100%);
 	border-radius: 5px;
 	color: #FFF;
 	display: inline-block;
@@ -1499,10 +1499,10 @@ Content Area
 }
 
 .home-top .more-link a:hover {
-	background-image: -webkit-linear-gradient(top, #007EB0 0%, #0094CE 100%);  
-    background-image: -moz-linear-gradient(top, #007EB0 0%, #0094CE 100%);  
-    background-image: -ms-linear-gradient(top, #007EB0 0%, #0094CE 100%);  
-    background-image: -o-linear-gradient(top, #007EB0 0%, #0094CE 100%);  
+	background-image: -webkit-linear-gradient(top, #007EB0 0%, #0094CE 100%);
+    background-image: -moz-linear-gradient(top, #007EB0 0%, #0094CE 100%);
+    background-image: -ms-linear-gradient(top, #007EB0 0%, #0094CE 100%);
+    background-image: -o-linear-gradient(top, #007EB0 0%, #0094CE 100%);
     background-image: linear-gradient(top, #007EB0 0%, #0094CE 100%);
 }
 
@@ -1689,7 +1689,7 @@ div.soliloquy-container .soliloquy-caption h4 {
 	position: absolute;
 	text-shadow: 1px 1px 1px #111;
 	z-index: 50;
-}	
+}
 
 .wsm-cta .more-link {
 	margin-top: 5px;
@@ -1924,11 +1924,11 @@ div.soliloquy-container .soliloquy-caption h4 {
 }
 
 .donate-btn a {
-	background-image: -webkit-linear-gradient(top, #0094CE 0%, #007EB0 100%);  
-    background-image: -moz-linear-gradient(top, #0094CE 0%, #007EB0 100%);  
-    background-image: -ms-linear-gradient(top, #0094CE 0%, #007EB0 100%);  
-    background-image: -o-linear-gradient(top, #0094CE 0%, #007EB0 100%);  
-    background-image: linear-gradient(top, #0094CE 0%, #007EB0 100%); 
+	background-image: -webkit-linear-gradient(top, #0094CE 0%, #007EB0 100%);
+    background-image: -moz-linear-gradient(top, #0094CE 0%, #007EB0 100%);
+    background-image: -ms-linear-gradient(top, #0094CE 0%, #007EB0 100%);
+    background-image: -o-linear-gradient(top, #0094CE 0%, #007EB0 100%);
+    background-image: linear-gradient(top, #0094CE 0%, #007EB0 100%);
 	border-radius: 5px;
 	color: #FFF;
 	display: inline-block;
@@ -1941,11 +1941,11 @@ div.soliloquy-container .soliloquy-caption h4 {
 }
 
 .donate-btn a:hover {
-	background-image: -webkit-linear-gradient(top, #007EB0 0%, #0094CE 100%);  
-    background-image: -moz-linear-gradient(top, #007EB0 0%, #0094CE 100%);  
-    background-image: -ms-linear-gradient(top, #007EB0 0%, #0094CE 100%);  
-    background-image: -o-linear-gradient(top, #007EB0 0%, #0094CE 100%);  
-    background-image: linear-gradient(top, #007EB0 0%, #0094CE 100%); 
+	background-image: -webkit-linear-gradient(top, #007EB0 0%, #0094CE 100%);
+    background-image: -moz-linear-gradient(top, #007EB0 0%, #0094CE 100%);
+    background-image: -ms-linear-gradient(top, #007EB0 0%, #0094CE 100%);
+    background-image: -o-linear-gradient(top, #007EB0 0%, #0094CE 100%);
+    background-image: linear-gradient(top, #007EB0 0%, #0094CE 100%);
 }
 
 .sidebar .donate-btn a {
@@ -2097,7 +2097,7 @@ li.comment {
 .comment-form p.comment-form-email {
 	margin-bottom: 8px;
 	margin-bottom: 0.8rem;
-}	
+}
 
 .comment-form .comment-form-comment textarea {
 	padding-bottom: 40px;
@@ -2401,20 +2401,20 @@ Color Options
 
 .patricia-red .home-top .more-link a,
 .patricia-red .donate-btn a {
-	background-image: -webkit-linear-gradient(top, #d52b28 0%, #ad0a07 100%);  
-    background-image: -moz-linear-gradient(top, #d52b28 0%, #ad0a07 100%);  
-    background-image: -ms-linear-gradient(top, #d52b28 0%, #ad0a07 100%);  
-    background-image: -o-linear-gradient(top, #d52b28 0%, #ad0a07 100%);  
-    background-image: linear-gradient(top, #d52b28 0%, #ad0a07 100%); 
+	background-image: -webkit-linear-gradient(top, #d52b28 0%, #ad0a07 100%);
+    background-image: -moz-linear-gradient(top, #d52b28 0%, #ad0a07 100%);
+    background-image: -ms-linear-gradient(top, #d52b28 0%, #ad0a07 100%);
+    background-image: -o-linear-gradient(top, #d52b28 0%, #ad0a07 100%);
+    background-image: linear-gradient(top, #d52b28 0%, #ad0a07 100%);
 }
 
 .patricia-red .home-top .more-link a:hover,
 .patricia-red .donate-btn a:hover {
-	background-image: -webkit-linear-gradient(top, #ad0a07 0%, #d52b28 100%);  
-    background-image: -moz-linear-gradient(top, #ad0a07 0%, #d52b28 100%);  
-    background-image: -ms-linear-gradient(top, #ad0a07 0%, #d52b28 100%);  
-    background-image: -o-linear-gradient(top, #ad0a07 0%, #d52b28 100%);  
-    background-image: linear-gradient(top, #ad0a07 0%, #d52b28 100%); 
+	background-image: -webkit-linear-gradient(top, #ad0a07 0%, #d52b28 100%);
+    background-image: -moz-linear-gradient(top, #ad0a07 0%, #d52b28 100%);
+    background-image: -ms-linear-gradient(top, #ad0a07 0%, #d52b28 100%);
+    background-image: -o-linear-gradient(top, #ad0a07 0%, #d52b28 100%);
+    background-image: linear-gradient(top, #ad0a07 0%, #d52b28 100%);
 }
 
 .patricia-red .home-top .more-link,
@@ -2467,8 +2467,6 @@ Color Options
 /* ------ Green ------ */
 
 .patricia-green a,
-.patricia-green .entry-meta a:hover,
-.patricia-green .entry-title a:hover,
 .patricia-green.single .entry-footer a,
 .patricia-green .latest-tweets li a,
 .patricia-green .widget_recent_comments li a,
@@ -2478,10 +2476,18 @@ Color Options
 .patricia-green .entry-content h5,
 .patricia-green .entry-content h6,
 .patricia-green .breadcrumb a,
-.patricia-green .sidebar a:hover,
 .patricia-green .sidebar .more-link a,
 .patricia-green .entry-content a {
-	color: #9EAA55;
+	font-family: 'Neris-Bold', sans-serif;
+	color: $blue;
+}
+
+.patricia-green .entry-meta a:hover,
+.patricia-green .entry-title a:hover,
+.patricia-green .sidebar a:hover,
+.patricia-green .entry-content a:hover {
+	text-decoration: none;
+	color: $yellow-green;
 }
 
 .patricia-green .site-title a,
@@ -2492,12 +2498,7 @@ Color Options
 .patricia-green .sidebar a,
 .patricia-green .nav-primary a,
 .patricia-green .entry-title a,
-.patricia-green a:hover,
-.patricia-green .entry-meta a,
-.patricia-green.single .entry-footer a:hover,
-.patricia-green .latest-tweets li a:hover,
-.patricia-green .widget_recent_comments li a:hover,
-.patricia-green .entry-content a:hover {
+.patricia-green .entry-meta a{
 	color: #231F20;
 }
 
@@ -2553,20 +2554,20 @@ Color Options
 
 .patricia-green .home-top .more-link a,
 .patricia-green .donate-btn a {
-	background-image: -webkit-linear-gradient(top, #A5B264 0%, #929f52 100%);  
-    background-image: -moz-linear-gradient(top, #A5B264 0%, #929f52 100%);  
-    background-image: -ms-linear-gradient(top, #A5B264 0%, #929f52 100%);  
-    background-image: -o-linear-gradient(top, #A5B264 0%, #929f52 100%);  
-    background-image: linear-gradient(top, #A5B264 0%, #929f52 100%); 
+	background-image: -webkit-linear-gradient(top, #A5B264 0%, #929f52 100%);
+    background-image: -moz-linear-gradient(top, #A5B264 0%, #929f52 100%);
+    background-image: -ms-linear-gradient(top, #A5B264 0%, #929f52 100%);
+    background-image: -o-linear-gradient(top, #A5B264 0%, #929f52 100%);
+    background-image: linear-gradient(top, #A5B264 0%, #929f52 100%);
 }
 
 .patricia-green .home-top .more-link a:hover,
 .patricia-green .donate-btn a:hover {
-	background-image: -webkit-linear-gradient(top, #929f52 0%, #A5B264 100%);  
-    background-image: -moz-linear-gradient(top, #929f52 0%, #A5B264 100%);  
-    background-image: -ms-linear-gradient(top, #929f52 0%, #A5B264 100%);  
-    background-image: -o-linear-gradient(top, #929f52 0%, #A5B264 100%);  
-    background-image: linear-gradient(top, #929f52 0%, #A5B264 100%); 
+	background-image: -webkit-linear-gradient(top, #929f52 0%, #A5B264 100%);
+    background-image: -moz-linear-gradient(top, #929f52 0%, #A5B264 100%);
+    background-image: -ms-linear-gradient(top, #929f52 0%, #A5B264 100%);
+    background-image: -o-linear-gradient(top, #929f52 0%, #A5B264 100%);
+    background-image: linear-gradient(top, #929f52 0%, #A5B264 100%);
 }
 
 .patricia-green .home-top .more-link,
@@ -2708,20 +2709,20 @@ Color Options
 
 .patricia-purple .home-top .more-link a,
 .patricia-purple .donate-btn a {
-	background-image: -webkit-linear-gradient(top, #7D7394 0%, #6e6287 100%);  
-    background-image: -moz-linear-gradient(top, #7D7394 0%, #6e6287 100%);  
-    background-image: -ms-linear-gradient(top, #7D7394 0%, #6e6287 100%);  
-    background-image: -o-linear-gradient(top, #7D7394 0%, #6e6287 100%);  
-    background-image: linear-gradient(top, #7D7394 0%, #6e6287 100%); 
+	background-image: -webkit-linear-gradient(top, #7D7394 0%, #6e6287 100%);
+    background-image: -moz-linear-gradient(top, #7D7394 0%, #6e6287 100%);
+    background-image: -ms-linear-gradient(top, #7D7394 0%, #6e6287 100%);
+    background-image: -o-linear-gradient(top, #7D7394 0%, #6e6287 100%);
+    background-image: linear-gradient(top, #7D7394 0%, #6e6287 100%);
 }
 
 .patricia-purple .home-top .more-link a:hover,
 .patricia-purple .donate-btn a:hover {
-	background-image: -webkit-linear-gradient(top, #6e6287 0%, #7D7394 100%);  
-    background-image: -moz-linear-gradient(top, #6e6287 0%, #7D7394 100%);  
-    background-image: -ms-linear-gradient(top, #6e6287 0%, #7D7394 100%);  
-    background-image: -o-linear-gradient(top, #6e6287 0%, #7D7394 100%);  
-    background-image: linear-gradient(top, #6e6287 0%, #7D7394 100%); 
+	background-image: -webkit-linear-gradient(top, #6e6287 0%, #7D7394 100%);
+    background-image: -moz-linear-gradient(top, #6e6287 0%, #7D7394 100%);
+    background-image: -ms-linear-gradient(top, #6e6287 0%, #7D7394 100%);
+    background-image: -o-linear-gradient(top, #6e6287 0%, #7D7394 100%);
+    background-image: linear-gradient(top, #6e6287 0%, #7D7394 100%);
 }
 
 .patricia-purple .home-top .more-link,
@@ -2860,20 +2861,20 @@ Color Options
 
 .patricia-orange .home-top .more-link a,
 .patricia-orange .donate-btn a {
-	background-image: -webkit-linear-gradient(top, #F7805E 0%, #ec7452 100%);  
-    background-image: -moz-linear-gradient(top, #F7805E 0%, #ec7452 100%);  
-    background-image: -ms-linear-gradient(top, #F7805E 0%, #ec7452 100%);  
-    background-image: -o-linear-gradient(top, #F7805E 0%, #ec7452 100%);  
-    background-image: linear-gradient(top, #F7805E 0%, #ec7452 100%); 
+	background-image: -webkit-linear-gradient(top, #F7805E 0%, #ec7452 100%);
+    background-image: -moz-linear-gradient(top, #F7805E 0%, #ec7452 100%);
+    background-image: -ms-linear-gradient(top, #F7805E 0%, #ec7452 100%);
+    background-image: -o-linear-gradient(top, #F7805E 0%, #ec7452 100%);
+    background-image: linear-gradient(top, #F7805E 0%, #ec7452 100%);
 }
 
 .patricia-orange .home-top .more-link a:hover,
 .patricia-orange .donate-btn a:hover {
-	background-image: -webkit-linear-gradient(top, #ec7452 0%, #F7805E 100%);  
-    background-image: -moz-linear-gradient(top, #ec7452 0%, #F7805E 100%);  
-    background-image: -ms-linear-gradient(top, #ec7452 0%, #F7805E 100%);  
-    background-image: -o-linear-gradient(top, #ec7452 0%, #F7805E 100%);  
-    background-image: linear-gradient(top, #ec7452 0%, #F7805E 100%); 
+	background-image: -webkit-linear-gradient(top, #ec7452 0%, #F7805E 100%);
+    background-image: -moz-linear-gradient(top, #ec7452 0%, #F7805E 100%);
+    background-image: -ms-linear-gradient(top, #ec7452 0%, #F7805E 100%);
+    background-image: -o-linear-gradient(top, #ec7452 0%, #F7805E 100%);
+    background-image: linear-gradient(top, #ec7452 0%, #F7805E 100%);
 }
 
 .patricia-orange .home-top .more-link,
@@ -3012,20 +3013,20 @@ Color Options
 
 .patricia-pink .home-top .more-link a,
 .patricia-pink .donate-btn a {
-	background-image: -webkit-linear-gradient(top, #FFB5AC 0%, #f09f95 100%);  
-    background-image: -moz-linear-gradient(top, #FFB5AC 0%, #f09f95 100%);  
-    background-image: -ms-linear-gradient(top, #FFB5AC 0%, #f09f95 100%);  
-    background-image: -o-linear-gradient(top, #FFB5AC 0%, #f09f95 100%);  
-    background-image: linear-gradient(top, #FFB5AC 0%, #f09f95 100%); 
+	background-image: -webkit-linear-gradient(top, #FFB5AC 0%, #f09f95 100%);
+    background-image: -moz-linear-gradient(top, #FFB5AC 0%, #f09f95 100%);
+    background-image: -ms-linear-gradient(top, #FFB5AC 0%, #f09f95 100%);
+    background-image: -o-linear-gradient(top, #FFB5AC 0%, #f09f95 100%);
+    background-image: linear-gradient(top, #FFB5AC 0%, #f09f95 100%);
 }
 
 .patricia-pink .home-top .more-link a:hover,
 .patricia-pink .donate-btn a:hover {
-	background-image: -webkit-linear-gradient(top, #f09f95 0%, #FFB5AC 100%);  
-    background-image: -moz-linear-gradient(top, #f09f95 0%, #FFB5AC 100%);  
-    background-image: -ms-linear-gradient(top, #f09f95 0%, #FFB5AC 100%);  
-    background-image: -o-linear-gradient(top, #f09f95 0%, #FFB5AC 100%);  
-    background-image: linear-gradient(top, #f09f95 0%, #FFB5AC 100%); 
+	background-image: -webkit-linear-gradient(top, #f09f95 0%, #FFB5AC 100%);
+    background-image: -moz-linear-gradient(top, #f09f95 0%, #FFB5AC 100%);
+    background-image: -ms-linear-gradient(top, #f09f95 0%, #FFB5AC 100%);
+    background-image: -o-linear-gradient(top, #f09f95 0%, #FFB5AC 100%);
+    background-image: linear-gradient(top, #f09f95 0%, #FFB5AC 100%);
 }
 
 .patricia-pink .home-top .more-link,
@@ -3084,23 +3085,23 @@ Media Queries
 	.wrap {
 		max-width: 96%;
 	}
-	
+
 	.content {
 		padding: 0;
 		width: 68%;
 	}
-	
+
 	.sidebar-primary {
 		width: 30%;
 	}
-	
+
 	.genesis-nav-menu a,
 	.genesis-nav-menu > .first > a,
 	.genesis-nav-menu > .last > a {
 		padding: 12px 16px;
 		padding: 1.2rem 1.6rem;
 	}
-	
+
 	.genesis-nav-menu .menu-item {
 		font-size: 17px;
 		font-size: 1.7rem;
@@ -3120,16 +3121,16 @@ Media Queries
 	.genesis-nav-menu li.right {
 		display: none;
 	}
-	
+
 	div.soliloquy-container .soliloquy-caption {
 		bottom: 5%;
 	}
-	
+
 	div.soliloquy-container .soliloquy-control-nav {
 		left: auto;
 		right: 10px;
 	}
-	
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -3139,7 +3140,7 @@ Media Queries
 		float: none;
 		max-width: 100%;
 	}
-	
+
 	.header-image .site-title {
 		background-position: center center;
 	}
@@ -3148,7 +3149,7 @@ Media Queries
 		padding: 0;
 		width: 60%;
 	}
-	
+
 	.sidebar-primary {
 		width: 38%;
 	}
@@ -3156,7 +3157,7 @@ Media Queries
 	.title-area {
 		float: none;
 		margin: 0 auto;
-	}	
+	}
 
 	// .site-header .widget-area {
 	// 	clear: both;
@@ -3171,16 +3172,16 @@ Media Queries
 		position: relative;
 		top: auto;
 	}
-	
+
 	.site-header .wrap,
 	.nav-primary .wrap {
 		max-width: 100%;
 	}
-	
+
 	.home .nav-primary {
 		box-shadow: 0 0 6px #999999;
 	}
-	
+
 	.nav-primary .genesis-nav-menu {
 		padding-left: 0;
 	}
@@ -3188,25 +3189,25 @@ Media Queries
 	.wsm-cta .cta-text {
 		max-width: 80%;
 	}
-	
+
 	.home-bottom .widget-area {
 		margin-bottom: 30px;
 		margin-bottom: 3rem;
 	}
-	
+
 	.home-bottom .widget-area.home-bottom1 {
 		width: 100%;
 	}
-	
+
 	.home-bottom .widget-area.home-bottom2,
 	.home-bottom .widget-area.home-bottom3 {
 		width: 48%;
 	}
-	
+
 	.home-bottom .widget-area.home-bottom2 {
 		margin-left: 0;
 	}
-	
+
 	.site-header .widget-area,
 	.title-area {
 		width: 100%;
@@ -3225,7 +3226,7 @@ Media Queries
 	.site-header .search-form {
 		float: none;
 	}
-	
+
 	.five-sixths,
 	.four-sixths,
 	.one-fourth,
@@ -3257,21 +3258,21 @@ Media Queries
 	.sidebar-primary {
 		width: 100%;
 	}
-	
+
 	div.soliloquy-container .soliloquy-caption {
 		position: relative;
 	}
-	
+
 	div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
 		max-width: 100%;
 		padding: 20px;
 		padding: 2rem;
 	}
-	
+
 	.wsm-cta .cta-text {
 		max-width: 65%;
 	}
-	
+
 	.home-cta .wsm-cta .cta-text {
 		color: #231F20;
 		bottom: auto;
@@ -3284,13 +3285,13 @@ Media Queries
 		position: relative;
 		text-shadow: none;
 	}
-	
+
 	.home-bottom .widget-area.home-bottom2,
 	.home-bottom .widget-area.home-bottom3 {
 		float: none;
 		width: 100%;
 	}
-	
+
 	.entry-categories,
 	.entry-tags {
 		float: left;
@@ -3302,14 +3303,14 @@ Media Queries
 }
 
 @media only screen and (max-width: 480px) {
-	
+
 	.home-top .widgettitle,
 	div.soliloquy-container .soliloquy-caption h1,
 	div.soliloquy-container .soliloquy-caption h2 {
 		font-size: 32px;
 		font-size: 3.2rem;
 	}
-	
+
 	.footer-left,
 	.footer-right {
 		float: none;
@@ -3318,7 +3319,7 @@ Media Queries
 		max-width: 100%;
 		text-align: left;
 	}
-	
+
 	.footer-nav ul.nav {
 		float: none;
 	}
@@ -3332,16 +3333,16 @@ Media Queries
 		padding: 30px 2%;
 		padding: 3rem 2%;
 	}
-	
+
 	.home-cta .widget-area {
 		float: none;
 		margin: 0 auto;
 		width: 96%;
 	}
-	
+
 	.site-title {
 		font-size: 52px;
 		font-size: 5.2rem;
 	}
-	
+
 }

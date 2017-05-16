@@ -4,16 +4,16 @@
 
 @import url("//hello.myfonts.net/count/339a2b");
 
-@font-face {font-family: 'Neris-Light';src: url('webfonts/339A2B_0_0.eot');src: url('webfonts/339A2B_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/339A2B_0_0.woff2') format('woff2'),url('webfonts/339A2B_0_0.woff') format('woff'),url('webfonts/339A2B_0_0.ttf') format('truetype');} 
-  
+@font-face {font-family: 'Neris-Light';src: url('webfonts/339A2B_0_0.eot');src: url('webfonts/339A2B_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/339A2B_0_0.woff2') format('woff2'),url('webfonts/339A2B_0_0.woff') format('woff'),url('webfonts/339A2B_0_0.ttf') format('truetype');}
+
 @font-face {font-family: 'Neris-LightItalic';src: url('webfonts/339A2B_1_0.eot');src: url('webfonts/339A2B_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/339A2B_1_0.woff2') format('woff2'),url('webfonts/339A2B_1_0.woff') format('woff'),url('webfonts/339A2B_1_0.ttf') format('truetype');}
- 
+
 @font-face {font-family: 'Neris-BoldItalic';src: url('webfonts/339A2B_2_0.eot');src: url('webfonts/339A2B_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/339A2B_2_0.woff2') format('woff2'),url('webfonts/339A2B_2_0.woff') format('woff'),url('webfonts/339A2B_2_0.ttf') format('truetype');}
- 
+
 @font-face {font-family: 'Neris-Bold';src: url('webfonts/339A2B_3_0.eot');src: url('webfonts/339A2B_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/339A2B_3_0.woff2') format('woff2'),url('webfonts/339A2B_3_0.woff') format('woff'),url('webfonts/339A2B_3_0.ttf') format('truetype');}
- 
+
 @font-face {font-family: 'Neris-Regular';src: url('webfonts/339A2B_4_0.eot');src: url('webfonts/339A2B_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/339A2B_4_0.woff2') format('woff2'),url('webfonts/339A2B_4_0.woff') format('woff'),url('webfonts/339A2B_4_0.ttf') format('truetype');}
- 
+
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -27,14 +27,14 @@ h4 { font-size: 3rem; /*line-height: 1.35;*/}
 h5 { font-size: 2.2rem; /*line-height: 1.5;*/}
 h6 { font-size: 1.5rem; /*line-height: 1.6;*/}
 
- 
+
 @media($bp-smaller-than-tablet) {
-  h1 { font-size: 5.0rem; }
-  h2 { font-size: 4.2rem; }
+  h1 { font-size: 4.8rem; }
+  h2 { font-size: 4rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 3.0rem; }
   h5 { font-size: 2.2rem; }
-  h6 { font-size: 1.6rem; }
+  h6 { font-size: 1.5rem; }
 }
 
 h1{
@@ -62,13 +62,17 @@ h6{
   font-family: 'Neris-BoldItalic', sans-serif;
 }
 
-p{
+p, li{
   font-family: 'Neris-Light', sans-serif;
 }
 
 p {
-  font-size: 1.4rem;  
-  line-height: 1.428; 
+  font-size: 1.4rem;
+  line-height: 1.428;
   margin-top: 0;
   margin-bottom: 1.8rem;
+}
+
+body{
+   font-family: 'Neris-Light', sans-serif;
 }

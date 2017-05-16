@@ -413,12 +413,12 @@ h6 {
 @media (max-width: 750px) {
   /* line 32, sass/base/_typography.scss */
   h1 {
-    font-size: 5.0rem;
+    font-size: 4.8rem;
   }
 
   /* line 33, sass/base/_typography.scss */
   h2 {
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
 
   /* line 34, sass/base/_typography.scss */
@@ -438,7 +438,7 @@ h6 {
 
   /* line 37, sass/base/_typography.scss */
   h6 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 /* line 40, sass/base/_typography.scss */
@@ -473,7 +473,7 @@ h6 {
 }
 
 /* line 65, sass/base/_typography.scss */
-p {
+p, li {
   font-family: 'Neris-Light', sans-serif;
 }
 
@@ -483,6 +483,11 @@ p {
   line-height: 1.428;
   margin-top: 0;
   margin-bottom: 1.8rem;
+}
+
+/* line 76, sass/base/_typography.scss */
+body {
+  font-family: 'Neris-Light', sans-serif;
 }
 
 /* line 3, sass/base/_grid.scss */
@@ -1395,16 +1400,16 @@ body.home.page-template .mobile-header {
 /*
 	Theme Name: WV Hub - Patricia Update
 	Notes: Only make changes to this Template!  Avoid making any changes to Genesis(Parent) Theme
-	Description: Patricia is a non-profit WordPress theme designed for charity organizations. This Genesis child theme has six color options, lots of features, and it is SEO friendly. 
+	Description: Patricia is a non-profit WordPress theme designed for charity organizations. This Genesis child theme has six color options, lots of features, and it is SEO friendly.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
 	Version: 1.1.0
 
 	Template: genesis
-	
+
 	License: GPL-2.0+
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
-	
+
 */
 /*
 Imports
@@ -1460,7 +1465,6 @@ a:active, a:hover {
 
 /* line 33, sass/modules/_modules.scss */
 h1 {
-  font-size: 2em;
   margin: .67em 0;
 }
 
@@ -2173,9 +2177,6 @@ img.alignleft {
 --------------------------------------------- */
 /* line 707, sass/modules/_modules.scss */
 .entry-title {
-  font-size: 22px;
-  font-size: 2.2rem;
-  font-weight: 400;
   line-height: 1;
 }
 
@@ -2594,7 +2595,7 @@ img#wpstats {
 }
 
 /*
-WP Table 
+WP Table
 ---------------------------- */
 /* line 1081, sass/modules/_modules.scss */
 h2.tablepress-table-name {
@@ -4113,8 +4114,6 @@ Color Options
 /* ------ Green ------ */
 /* line 2469, sass/modules/_modules.scss */
 .patricia-green a,
-.patricia-green .entry-meta a:hover,
-.patricia-green .entry-title a:hover,
 .patricia-green.single .entry-footer a,
 .patricia-green .latest-tweets li a,
 .patricia-green .widget_recent_comments li a,
@@ -4124,38 +4123,42 @@ Color Options
 .patricia-green .entry-content h5,
 .patricia-green .entry-content h6,
 .patricia-green .breadcrumb a,
-.patricia-green .sidebar a:hover,
 .patricia-green .sidebar .more-link a,
 .patricia-green .entry-content a {
-  color: #9EAA55;
+  font-family: 'Neris-Bold', sans-serif;
+  color: #74ACC7;
 }
 
-/* line 2487, sass/modules/_modules.scss */
+/* line 2485, sass/modules/_modules.scss */
+.patricia-green .entry-meta a:hover,
+.patricia-green .entry-title a:hover,
+.patricia-green .sidebar a:hover,
+.patricia-green .entry-content a:hover {
+  text-decoration: none;
+  color: #D0E873;
+}
+
+/* line 2493, sass/modules/_modules.scss */
 .patricia-green .site-title a,
 .patricia-green .site-title a:hover {
   color: #6F7073;
 }
 
-/* line 2492, sass/modules/_modules.scss */
+/* line 2498, sass/modules/_modules.scss */
 .patricia-green .sidebar a,
 .patricia-green .nav-primary a,
 .patricia-green .entry-title a,
-.patricia-green a:hover,
-.patricia-green .entry-meta a,
-.patricia-green.single .entry-footer a:hover,
-.patricia-green .latest-tweets li a:hover,
-.patricia-green .widget_recent_comments li a:hover,
-.patricia-green .entry-content a:hover {
+.patricia-green .entry-meta a {
   color: #231F20;
 }
 
-/* line 2504, sass/modules/_modules.scss */
+/* line 2505, sass/modules/_modules.scss */
 .patricia-green .site-footer a:hover,
 .patricia-green .breadcrumb a:hover {
   color: #86888A;
 }
 
-/* line 2509, sass/modules/_modules.scss */
+/* line 2510, sass/modules/_modules.scss */
 .patricia-green .wsm-cta .more-link a,
 .patricia-green .home-top .more-link a,
 .patricia-green .site-footer a,
@@ -4167,7 +4170,7 @@ Color Options
   color: #FFF;
 }
 
-/* line 2522, sass/modules/_modules.scss */
+/* line 2523, sass/modules/_modules.scss */
 .patricia-green .comment-reply a,
 .patricia-green blockquote .name,
 .patricia-green button,
@@ -4181,7 +4184,7 @@ Color Options
   background-color: #A5B264;
 }
 
-/* line 2537, sass/modules/_modules.scss */
+/* line 2538, sass/modules/_modules.scss */
 .patricia-green .comment-reply a:hover,
 .patricia-green button:hover,
 .patricia-green input[type="button"]:hover,
@@ -4193,13 +4196,13 @@ Color Options
   background-color: #a8b955;
 }
 
-/* line 2549, sass/modules/_modules.scss */
+/* line 2550, sass/modules/_modules.scss */
 .patricia-green blockquote,
 .patricia-green .genesis-nav-menu .sub-menu a {
   border-color: #bfcd79;
 }
 
-/* line 2554, sass/modules/_modules.scss */
+/* line 2555, sass/modules/_modules.scss */
 .patricia-green .home-top .more-link a,
 .patricia-green .donate-btn a {
   background-image: -webkit-linear-gradient(top, #A5B264 0%, #929f52 100%);
@@ -4209,7 +4212,7 @@ Color Options
   background-image: linear-gradient(to bottom, #a5b264 0%, #929f52 100%);
 }
 
-/* line 2563, sass/modules/_modules.scss */
+/* line 2564, sass/modules/_modules.scss */
 .patricia-green .home-top .more-link a:hover,
 .patricia-green .donate-btn a:hover {
   background-image: -webkit-linear-gradient(top, #929f52 0%, #A5B264 100%);
@@ -4219,66 +4222,66 @@ Color Options
   background-image: linear-gradient(to bottom, #929f52 0%, #a5b264 100%);
 }
 
-/* line 2572, sass/modules/_modules.scss */
+/* line 2573, sass/modules/_modules.scss */
 .patricia-green .home-top .more-link,
 .patricia-green .donate-btn {
   background-image: url(images/patricia-green/color-line.png);
 }
 
-/* line 2577, sass/modules/_modules.scss */
+/* line 2578, sass/modules/_modules.scss */
 .patricia-green blockquote .name:before {
   background-image: url(images/patricia-green/blockquote-ribbon.png);
 }
 
-/* line 2581, sass/modules/_modules.scss */
+/* line 2582, sass/modules/_modules.scss */
 .patricia-green .more-link a {
   background-image: url(images/patricia-green/arrow-right-color.png);
 }
 
-/* line 2585, sass/modules/_modules.scss */
+/* line 2586, sass/modules/_modules.scss */
 .patricia-green .wsm-cta .more-link a,
 .patricia-green .home-top .more-link a,
 .patricia-green .home-slider .more-link a {
   background-image: none;
 }
 
-/* line 2591, sass/modules/_modules.scss */
+/* line 2592, sass/modules/_modules.scss */
 .patricia-green .sidebar .widget-social .widget-wrap {
   background-image: url(images/patricia-green/color-line.png);
 }
 
-/* line 2595, sass/modules/_modules.scss */
+/* line 2596, sass/modules/_modules.scss */
 .patricia-green .entry-content ul li {
   list-style-image: url("images/patricia-green/list-circle-color.png");
 }
 
-/* line 2599, sass/modules/_modules.scss */
+/* line 2600, sass/modules/_modules.scss */
 .patricia-green .widget-social a.btn-tw {
   background: url(images/patricia-green/icon-twitter.png) no-repeat center center transparent;
 }
 
-/* line 2603, sass/modules/_modules.scss */
+/* line 2604, sass/modules/_modules.scss */
 .patricia-green .widget-social a.btn-fb {
   background: url(images/patricia-green/icon-facebook.png) no-repeat center center transparent;
 }
 
-/* line 2607, sass/modules/_modules.scss */
+/* line 2608, sass/modules/_modules.scss */
 .patricia-green .widget-social a.btn-gp {
   background: url(images/patricia-green/icon-gplus.png) no-repeat center center transparent;
 }
 
-/* line 2611, sass/modules/_modules.scss */
+/* line 2612, sass/modules/_modules.scss */
 .patricia-green .widget-social a.btn-pi {
   background: url(images/patricia-green/icon-pinterest.png) no-repeat center center transparent;
 }
 
-/* line 2615, sass/modules/_modules.scss */
+/* line 2616, sass/modules/_modules.scss */
 .patricia-green .widget-social a.btn-yt {
   background: url(images/patricia-green/icon-youtube.png) no-repeat center center transparent;
 }
 
 /* ------ Purple ------ */
-/* line 2621, sass/modules/_modules.scss */
+/* line 2622, sass/modules/_modules.scss */
 .patricia-purple .entry-meta a:hover,
 .patricia-purple .entry-title a:hover,
 .patricia-purple.single .entry-footer a,
@@ -4295,19 +4298,19 @@ Color Options
   color: #7D7394;
 }
 
-/* line 2637, sass/modules/_modules.scss */
+/* line 2638, sass/modules/_modules.scss */
 .patricia-purple .site-title a,
 .patricia-purple .site-title a:hover {
   color: #6F7073;
 }
 
-/* line 2642, sass/modules/_modules.scss */
+/* line 2643, sass/modules/_modules.scss */
 .patricia-purple a,
 .patricia-purple .entry-content a {
   color: #7661a7;
 }
 
-/* line 2647, sass/modules/_modules.scss */
+/* line 2648, sass/modules/_modules.scss */
 .patricia-purple .sidebar a,
 .patricia-purple .nav-primary a,
 .patricia-purple .entry-title a,
@@ -4320,13 +4323,13 @@ Color Options
   color: #231F20;
 }
 
-/* line 2659, sass/modules/_modules.scss */
+/* line 2660, sass/modules/_modules.scss */
 .patricia-purple .site-footer a:hover,
 .patricia-purple .breadcrumb a:hover {
   color: #86888A;
 }
 
-/* line 2664, sass/modules/_modules.scss */
+/* line 2665, sass/modules/_modules.scss */
 .patricia-purple .wsm-cta .more-link a,
 .patricia-purple .home-top .more-link a,
 .patricia-purple .site-footer a,
@@ -4340,7 +4343,7 @@ Color Options
   color: #FFF;
 }
 
-/* line 2677, sass/modules/_modules.scss */
+/* line 2678, sass/modules/_modules.scss */
 .patricia-purple .comment-reply a,
 .patricia-purple blockquote .name,
 .patricia-purple button,
@@ -4356,7 +4359,7 @@ Color Options
   background-color: #7D7394;
 }
 
-/* line 2692, sass/modules/_modules.scss */
+/* line 2693, sass/modules/_modules.scss */
 .patricia-purple .comment-reply a:hover,
 .patricia-purple button:hover,
 .patricia-purple input[type="button"]:hover,
@@ -4369,13 +4372,13 @@ Color Options
   background-color: #7664a1;
 }
 
-/* line 2704, sass/modules/_modules.scss */
+/* line 2705, sass/modules/_modules.scss */
 .patricia-purple blockquote,
 .patricia-purple .genesis-nav-menu .sub-menu a {
   border-color: #7b6f94;
 }
 
-/* line 2709, sass/modules/_modules.scss */
+/* line 2710, sass/modules/_modules.scss */
 .patricia-purple .home-top .more-link a,
 .patricia-purple .donate-btn a {
   background-image: -webkit-linear-gradient(top, #7D7394 0%, #6e6287 100%);
@@ -4385,7 +4388,7 @@ Color Options
   background-image: linear-gradient(to bottom, #7d7394 0%, #6e6287 100%);
 }
 
-/* line 2718, sass/modules/_modules.scss */
+/* line 2719, sass/modules/_modules.scss */
 .patricia-purple .home-top .more-link a:hover,
 .patricia-purple .donate-btn a:hover {
   background-image: -webkit-linear-gradient(top, #6e6287 0%, #7D7394 100%);
@@ -4395,66 +4398,66 @@ Color Options
   background-image: linear-gradient(to bottom, #6e6287 0%, #7d7394 100%);
 }
 
-/* line 2727, sass/modules/_modules.scss */
+/* line 2728, sass/modules/_modules.scss */
 .patricia-purple .home-top .more-link,
 .patricia-purple .donate-btn {
   background-image: url(images/patricia-purple/color-line.png);
 }
 
-/* line 2732, sass/modules/_modules.scss */
+/* line 2733, sass/modules/_modules.scss */
 .patricia-purple blockquote .name:before {
   background-image: url(images/patricia-purple/blockquote-ribbon.png);
 }
 
-/* line 2736, sass/modules/_modules.scss */
+/* line 2737, sass/modules/_modules.scss */
 .patricia-purple .more-link a {
   background-image: url(images/patricia-purple/arrow-right-color.png);
 }
 
-/* line 2740, sass/modules/_modules.scss */
+/* line 2741, sass/modules/_modules.scss */
 .patricia-purple .wsm-cta .more-link a,
 .patricia-purple .home-top .more-link a,
 .patricia-purple .home-slider .more-link a {
   background-image: none;
 }
 
-/* line 2746, sass/modules/_modules.scss */
+/* line 2747, sass/modules/_modules.scss */
 .patricia-purple .sidebar .widget-social .widget-wrap {
   background-image: url(images/patricia-purple/color-line.png);
 }
 
-/* line 2750, sass/modules/_modules.scss */
+/* line 2751, sass/modules/_modules.scss */
 .patricia-purple .entry-content ul li {
   list-style-image: url("images/patricia-purple/list-circle-color.png");
 }
 
-/* line 2754, sass/modules/_modules.scss */
+/* line 2755, sass/modules/_modules.scss */
 .patricia-purple .widget-social a.btn-tw {
   background: url(images/patricia-purple/icon-twitter.png) no-repeat center center transparent;
 }
 
-/* line 2758, sass/modules/_modules.scss */
+/* line 2759, sass/modules/_modules.scss */
 .patricia-purple .widget-social a.btn-fb {
   background: url(images/patricia-purple/icon-facebook.png) no-repeat center center transparent;
 }
 
-/* line 2762, sass/modules/_modules.scss */
+/* line 2763, sass/modules/_modules.scss */
 .patricia-purple .widget-social a.btn-gp {
   background: url(images/patricia-purple/icon-gplus.png) no-repeat center center transparent;
 }
 
-/* line 2766, sass/modules/_modules.scss */
+/* line 2767, sass/modules/_modules.scss */
 .patricia-purple .widget-social a.btn-pi {
   background: url(images/patricia-purple/icon-pinterest.png) no-repeat center center transparent;
 }
 
-/* line 2770, sass/modules/_modules.scss */
+/* line 2771, sass/modules/_modules.scss */
 .patricia-purple .widget-social a.btn-yt {
   background: url(images/patricia-purple/icon-youtube.png) no-repeat center center transparent;
 }
 
 /* ------ Orange ------ */
-/* line 2776, sass/modules/_modules.scss */
+/* line 2777, sass/modules/_modules.scss */
 .patricia-orange a,
 .patricia-orange .entry-meta a:hover,
 .patricia-orange .entry-title a:hover,
@@ -4473,13 +4476,13 @@ Color Options
   color: #F7805E;
 }
 
-/* line 2794, sass/modules/_modules.scss */
+/* line 2795, sass/modules/_modules.scss */
 .patricia-orange .site-title a,
 .patricia-orange .site-title a:hover {
   color: #6F7073;
 }
 
-/* line 2799, sass/modules/_modules.scss */
+/* line 2800, sass/modules/_modules.scss */
 .patricia-orange .sidebar a,
 .patricia-orange .nav-primary a,
 .patricia-orange .entry-title a,
@@ -4492,13 +4495,13 @@ Color Options
   color: #231F20;
 }
 
-/* line 2811, sass/modules/_modules.scss */
+/* line 2812, sass/modules/_modules.scss */
 .patricia-orange .site-footer a:hover,
 .patricia-orange .breadcrumb a:hover {
   color: #86888A;
 }
 
-/* line 2816, sass/modules/_modules.scss */
+/* line 2817, sass/modules/_modules.scss */
 .patricia-orange .wsm-cta .more-link a,
 .patricia-orange .home-top .more-link a,
 .patricia-orange .home-slider .more-link a,
@@ -4512,7 +4515,7 @@ Color Options
   color: #FFF;
 }
 
-/* line 2829, sass/modules/_modules.scss */
+/* line 2830, sass/modules/_modules.scss */
 .patricia-orange .comment-reply a,
 .patricia-orange blockquote .name,
 .patricia-orange button,
@@ -4528,7 +4531,7 @@ Color Options
   background-color: #F7805E;
 }
 
-/* line 2844, sass/modules/_modules.scss */
+/* line 2845, sass/modules/_modules.scss */
 .patricia-orange .comment-reply a:hover,
 .patricia-orange button:hover,
 .patricia-orange input[type="button"]:hover,
@@ -4541,13 +4544,13 @@ Color Options
   background-color: #ed714e;
 }
 
-/* line 2856, sass/modules/_modules.scss */
+/* line 2857, sass/modules/_modules.scss */
 .patricia-orange blockquote,
 .patricia-orange .genesis-nav-menu .sub-menu a {
   border-color: #fa9072;
 }
 
-/* line 2861, sass/modules/_modules.scss */
+/* line 2862, sass/modules/_modules.scss */
 .patricia-orange .home-top .more-link a,
 .patricia-orange .donate-btn a {
   background-image: -webkit-linear-gradient(top, #F7805E 0%, #ec7452 100%);
@@ -4557,7 +4560,7 @@ Color Options
   background-image: linear-gradient(to bottom, #f7805e 0%, #ec7452 100%);
 }
 
-/* line 2870, sass/modules/_modules.scss */
+/* line 2871, sass/modules/_modules.scss */
 .patricia-orange .home-top .more-link a:hover,
 .patricia-orange .donate-btn a:hover {
   background-image: -webkit-linear-gradient(top, #ec7452 0%, #F7805E 100%);
@@ -4567,66 +4570,66 @@ Color Options
   background-image: linear-gradient(to bottom, #ec7452 0%, #f7805e 100%);
 }
 
-/* line 2879, sass/modules/_modules.scss */
+/* line 2880, sass/modules/_modules.scss */
 .patricia-orange .home-top .more-link,
 .patricia-orange .donate-btn {
   background-image: url(images/patricia-orange/color-line.png);
 }
 
-/* line 2884, sass/modules/_modules.scss */
+/* line 2885, sass/modules/_modules.scss */
 .patricia-orange blockquote .name:before {
   background-image: url(images/patricia-orange/blockquote-ribbon.png);
 }
 
-/* line 2888, sass/modules/_modules.scss */
+/* line 2889, sass/modules/_modules.scss */
 .patricia-orange .more-link a {
   background-image: url(images/patricia-orange/arrow-right-color.png);
 }
 
-/* line 2892, sass/modules/_modules.scss */
+/* line 2893, sass/modules/_modules.scss */
 .patricia-orange .wsm-cta .more-link a,
 .patricia-orange .home-top .more-link a,
 .patricia-orange .home-slider .more-link a {
   background-image: none;
 }
 
-/* line 2898, sass/modules/_modules.scss */
+/* line 2899, sass/modules/_modules.scss */
 .patricia-orange .sidebar .widget-social .widget-wrap {
   background-image: url(images/patricia-orange/color-line.png);
 }
 
-/* line 2902, sass/modules/_modules.scss */
+/* line 2903, sass/modules/_modules.scss */
 .patricia-orange .entry-content ul li {
   list-style-image: url("images/patricia-orange/list-circle-color.png");
 }
 
-/* line 2906, sass/modules/_modules.scss */
+/* line 2907, sass/modules/_modules.scss */
 .patricia-orange .widget-social a.btn-tw {
   background: url(images/patricia-orange/icon-twitter.png) no-repeat center center transparent;
 }
 
-/* line 2910, sass/modules/_modules.scss */
+/* line 2911, sass/modules/_modules.scss */
 .patricia-orange .widget-social a.btn-fb {
   background: url(images/patricia-orange/icon-facebook.png) no-repeat center center transparent;
 }
 
-/* line 2914, sass/modules/_modules.scss */
+/* line 2915, sass/modules/_modules.scss */
 .patricia-orange .widget-social a.btn-gp {
   background: url(images/patricia-orange/icon-gplus.png) no-repeat center center transparent;
 }
 
-/* line 2918, sass/modules/_modules.scss */
+/* line 2919, sass/modules/_modules.scss */
 .patricia-orange .widget-social a.btn-pi {
   background: url(images/patricia-orange/icon-pinterest.png) no-repeat center center transparent;
 }
 
-/* line 2922, sass/modules/_modules.scss */
+/* line 2923, sass/modules/_modules.scss */
 .patricia-orange .widget-social a.btn-yt {
   background: url(images/patricia-orange/icon-youtube.png) no-repeat center center transparent;
 }
 
 /* ------ Pink ------ */
-/* line 2928, sass/modules/_modules.scss */
+/* line 2929, sass/modules/_modules.scss */
 .patricia-pink a,
 .patricia-pink .entry-meta a:hover,
 .patricia-pink .entry-title a:hover,
@@ -4645,13 +4648,13 @@ Color Options
   color: #f47c7c;
 }
 
-/* line 2946, sass/modules/_modules.scss */
+/* line 2947, sass/modules/_modules.scss */
 .patricia-pink .site-title a,
 .patricia-pink .site-title a:hover {
   color: #6F7073;
 }
 
-/* line 2951, sass/modules/_modules.scss */
+/* line 2952, sass/modules/_modules.scss */
 .patricia-pink .sidebar a,
 .patricia-pink .nav-primary a,
 .patricia-pink .entry-title a,
@@ -4664,13 +4667,13 @@ Color Options
   color: #231F20;
 }
 
-/* line 2963, sass/modules/_modules.scss */
+/* line 2964, sass/modules/_modules.scss */
 .patricia-pink .site-footer a:hover,
 .patricia-pink .breadcrumb a:hover {
   color: #86888A;
 }
 
-/* line 2968, sass/modules/_modules.scss */
+/* line 2969, sass/modules/_modules.scss */
 .patricia-pink .wsm-cta .more-link a,
 .patricia-pink .home-top .more-link a,
 .patricia-pink .site-footer a,
@@ -4684,7 +4687,7 @@ Color Options
   color: #FFF;
 }
 
-/* line 2981, sass/modules/_modules.scss */
+/* line 2982, sass/modules/_modules.scss */
 .patricia-pink .comment-reply a,
 .patricia-pink blockquote .name,
 .patricia-pink button,
@@ -4700,7 +4703,7 @@ Color Options
   background-color: #fca79d;
 }
 
-/* line 2996, sass/modules/_modules.scss */
+/* line 2997, sass/modules/_modules.scss */
 .patricia-pink .comment-reply a:hover,
 .patricia-pink button:hover,
 .patricia-pink input[type="button"]:hover,
@@ -4713,13 +4716,13 @@ Color Options
   background-color: #ff9589;
 }
 
-/* line 3008, sass/modules/_modules.scss */
+/* line 3009, sass/modules/_modules.scss */
 .patricia-pink blockquote,
 .patricia-pink .genesis-nav-menu .sub-menu a {
   border-color: #fdcac3;
 }
 
-/* line 3013, sass/modules/_modules.scss */
+/* line 3014, sass/modules/_modules.scss */
 .patricia-pink .home-top .more-link a,
 .patricia-pink .donate-btn a {
   background-image: -webkit-linear-gradient(top, #FFB5AC 0%, #f09f95 100%);
@@ -4729,7 +4732,7 @@ Color Options
   background-image: linear-gradient(to bottom, #ffb5ac 0%, #f09f95 100%);
 }
 
-/* line 3022, sass/modules/_modules.scss */
+/* line 3023, sass/modules/_modules.scss */
 .patricia-pink .home-top .more-link a:hover,
 .patricia-pink .donate-btn a:hover {
   background-image: -webkit-linear-gradient(top, #f09f95 0%, #FFB5AC 100%);
@@ -4739,60 +4742,60 @@ Color Options
   background-image: linear-gradient(to bottom, #f09f95 0%, #ffb5ac 100%);
 }
 
-/* line 3031, sass/modules/_modules.scss */
+/* line 3032, sass/modules/_modules.scss */
 .patricia-pink .home-top .more-link,
 .patricia-pink .donate-btn {
   background-image: url(images/patricia-pink/color-line.png);
 }
 
-/* line 3036, sass/modules/_modules.scss */
+/* line 3037, sass/modules/_modules.scss */
 .patricia-pink blockquote .name:before {
   background-image: url(images/patricia-pink/blockquote-ribbon.png);
 }
 
-/* line 3040, sass/modules/_modules.scss */
+/* line 3041, sass/modules/_modules.scss */
 .patricia-pink .more-link a {
   background-image: url(images/patricia-pink/arrow-right-color.png);
 }
 
-/* line 3044, sass/modules/_modules.scss */
+/* line 3045, sass/modules/_modules.scss */
 .patricia-pink .wsm-cta .more-link a,
 .patricia-pink .home-top .more-link a,
 .patricia-pink .home-slider .more-link a {
   background-image: none;
 }
 
-/* line 3050, sass/modules/_modules.scss */
+/* line 3051, sass/modules/_modules.scss */
 .patricia-pink .sidebar .widget-social .widget-wrap {
   background-image: url(images/patricia-pink/color-line.png);
 }
 
-/* line 3054, sass/modules/_modules.scss */
+/* line 3055, sass/modules/_modules.scss */
 .patricia-pink .entry-content ul li {
   list-style-image: url("images/patricia-pink/list-circle-color.png");
 }
 
-/* line 3058, sass/modules/_modules.scss */
+/* line 3059, sass/modules/_modules.scss */
 .patricia-pink .widget-social a.btn-tw {
   background: url(images/patricia-pink/icon-twitter.png) no-repeat center center transparent;
 }
 
-/* line 3062, sass/modules/_modules.scss */
+/* line 3063, sass/modules/_modules.scss */
 .patricia-pink .widget-social a.btn-fb {
   background: url(images/patricia-pink/icon-facebook.png) no-repeat center center transparent;
 }
 
-/* line 3066, sass/modules/_modules.scss */
+/* line 3067, sass/modules/_modules.scss */
 .patricia-pink .widget-social a.btn-gp {
   background: url(images/patricia-pink/icon-gplus.png) no-repeat center center transparent;
 }
 
-/* line 3070, sass/modules/_modules.scss */
+/* line 3071, sass/modules/_modules.scss */
 .patricia-pink .widget-social a.btn-pi {
   background: url(images/patricia-pink/icon-pinterest.png) no-repeat center center transparent;
 }
 
-/* line 3074, sass/modules/_modules.scss */
+/* line 3075, sass/modules/_modules.scss */
 .patricia-pink .widget-social a.btn-yt {
   background: url(images/patricia-pink/icon-youtube.png) no-repeat center center transparent;
 }
@@ -4801,23 +4804,23 @@ Color Options
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1152px) {
-  /* line 3084, sass/modules/_modules.scss */
+  /* line 3085, sass/modules/_modules.scss */
   .wrap {
     max-width: 96%;
   }
 
-  /* line 3088, sass/modules/_modules.scss */
+  /* line 3089, sass/modules/_modules.scss */
   .content {
     padding: 0;
     width: 68%;
   }
 
-  /* line 3093, sass/modules/_modules.scss */
+  /* line 3094, sass/modules/_modules.scss */
   .sidebar-primary {
     width: 30%;
   }
 
-  /* line 3097, sass/modules/_modules.scss */
+  /* line 3098, sass/modules/_modules.scss */
   .genesis-nav-menu a,
   .genesis-nav-menu > .first > a,
   .genesis-nav-menu > .last > a {
@@ -4825,14 +4828,14 @@ Media Queries
     padding: 1.2rem 1.6rem;
   }
 
-  /* line 3104, sass/modules/_modules.scss */
+  /* line 3105, sass/modules/_modules.scss */
   .genesis-nav-menu .menu-item {
     font-size: 17px;
     font-size: 1.7rem;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 3113, sass/modules/_modules.scss */
+  /* line 3114, sass/modules/_modules.scss */
   .genesis-nav-menu a,
   .genesis-nav-menu > .first > a,
   .genesis-nav-menu > .last > a {
@@ -4840,109 +4843,109 @@ Media Queries
     padding: 1.2rem 1rem;
   }
 
-  /* line 3120, sass/modules/_modules.scss */
+  /* line 3121, sass/modules/_modules.scss */
   .genesis-nav-menu li.right {
     display: none;
   }
 
-  /* line 3124, sass/modules/_modules.scss */
+  /* line 3125, sass/modules/_modules.scss */
   div.soliloquy-container .soliloquy-caption {
     bottom: 5%;
   }
 
-  /* line 3128, sass/modules/_modules.scss */
+  /* line 3129, sass/modules/_modules.scss */
   div.soliloquy-container .soliloquy-control-nav {
     left: auto;
     right: 10px;
   }
 }
 @media only screen and (max-width: 900px) {
-  /* line 3137, sass/modules/_modules.scss */
+  /* line 3138, sass/modules/_modules.scss */
   .header-image .site-title,
   .header-image .site-title a {
     float: none;
     max-width: 100%;
   }
 
-  /* line 3143, sass/modules/_modules.scss */
+  /* line 3144, sass/modules/_modules.scss */
   .header-image .site-title {
     background-position: center center;
   }
 
-  /* line 3147, sass/modules/_modules.scss */
+  /* line 3148, sass/modules/_modules.scss */
   .content {
     padding: 0;
     width: 60%;
   }
 
-  /* line 3152, sass/modules/_modules.scss */
+  /* line 3153, sass/modules/_modules.scss */
   .sidebar-primary {
     width: 38%;
   }
 
-  /* line 3156, sass/modules/_modules.scss */
+  /* line 3157, sass/modules/_modules.scss */
   .title-area {
     float: none;
     margin: 0 auto;
   }
 
-  /* line 3169, sass/modules/_modules.scss */
+  /* line 3170, sass/modules/_modules.scss */
   .nav-primary,
   .home .site-header {
     position: relative;
     top: auto;
   }
 
-  /* line 3175, sass/modules/_modules.scss */
+  /* line 3176, sass/modules/_modules.scss */
   .site-header .wrap,
   .nav-primary .wrap {
     max-width: 100%;
   }
 
-  /* line 3180, sass/modules/_modules.scss */
+  /* line 3181, sass/modules/_modules.scss */
   .home .nav-primary {
     box-shadow: 0 0 6px #999999;
   }
 
-  /* line 3184, sass/modules/_modules.scss */
+  /* line 3185, sass/modules/_modules.scss */
   .nav-primary .genesis-nav-menu {
     padding-left: 0;
   }
 
-  /* line 3188, sass/modules/_modules.scss */
+  /* line 3189, sass/modules/_modules.scss */
   .wsm-cta .cta-text {
     max-width: 80%;
   }
 
-  /* line 3192, sass/modules/_modules.scss */
+  /* line 3193, sass/modules/_modules.scss */
   .home-bottom .widget-area {
     margin-bottom: 30px;
     margin-bottom: 3rem;
   }
 
-  /* line 3197, sass/modules/_modules.scss */
+  /* line 3198, sass/modules/_modules.scss */
   .home-bottom .widget-area.home-bottom1 {
     width: 100%;
   }
 
-  /* line 3201, sass/modules/_modules.scss */
+  /* line 3202, sass/modules/_modules.scss */
   .home-bottom .widget-area.home-bottom2,
   .home-bottom .widget-area.home-bottom3 {
     width: 48%;
   }
 
-  /* line 3206, sass/modules/_modules.scss */
+  /* line 3207, sass/modules/_modules.scss */
   .home-bottom .widget-area.home-bottom2 {
     margin-left: 0;
   }
 
-  /* line 3210, sass/modules/_modules.scss */
+  /* line 3211, sass/modules/_modules.scss */
   .site-header .widget-area,
   .title-area {
     width: 100%;
   }
 
-  /* line 3215, sass/modules/_modules.scss */
+  /* line 3216, sass/modules/_modules.scss */
   .genesis-nav-menu,
   .site-description,
   .site-header .title-area,
@@ -4951,14 +4954,14 @@ Media Queries
     text-align: center;
   }
 
-  /* line 3223, sass/modules/_modules.scss */
+  /* line 3224, sass/modules/_modules.scss */
   .genesis-nav-menu li,
   .site-header ul.genesis-nav-menu,
   .site-header .search-form {
     float: none;
   }
 
-  /* line 3229, sass/modules/_modules.scss */
+  /* line 3230, sass/modules/_modules.scss */
   .five-sixths,
   .four-sixths,
   .one-fourth,
@@ -4975,7 +4978,7 @@ Media Queries
   }
 }
 @media only screen and (max-width: 680px) {
-  /* line 3249, sass/modules/_modules.scss */
+  /* line 3250, sass/modules/_modules.scss */
   .genesis-nav-menu a,
   .genesis-nav-menu > .first > a,
   .genesis-nav-menu > .last > a {
@@ -4983,30 +4986,30 @@ Media Queries
     padding: 0.6rem 1rem;
   }
 
-  /* line 3256, sass/modules/_modules.scss */
+  /* line 3257, sass/modules/_modules.scss */
   .content,
   .sidebar-primary {
     width: 100%;
   }
 
-  /* line 3261, sass/modules/_modules.scss */
+  /* line 3262, sass/modules/_modules.scss */
   div.soliloquy-container .soliloquy-caption {
     position: relative;
   }
 
-  /* line 3265, sass/modules/_modules.scss */
+  /* line 3266, sass/modules/_modules.scss */
   div.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
     max-width: 100%;
     padding: 20px;
     padding: 2rem;
   }
 
-  /* line 3271, sass/modules/_modules.scss */
+  /* line 3272, sass/modules/_modules.scss */
   .wsm-cta .cta-text {
     max-width: 65%;
   }
 
-  /* line 3275, sass/modules/_modules.scss */
+  /* line 3276, sass/modules/_modules.scss */
   .home-cta .wsm-cta .cta-text {
     color: #231F20;
     bottom: auto;
@@ -5020,14 +5023,14 @@ Media Queries
     text-shadow: none;
   }
 
-  /* line 3288, sass/modules/_modules.scss */
+  /* line 3289, sass/modules/_modules.scss */
   .home-bottom .widget-area.home-bottom2,
   .home-bottom .widget-area.home-bottom3 {
     float: none;
     width: 100%;
   }
 
-  /* line 3294, sass/modules/_modules.scss */
+  /* line 3295, sass/modules/_modules.scss */
   .entry-categories,
   .entry-tags {
     float: left;
@@ -5037,7 +5040,7 @@ Media Queries
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 3306, sass/modules/_modules.scss */
+  /* line 3307, sass/modules/_modules.scss */
   .home-top .widgettitle,
   div.soliloquy-container .soliloquy-caption h1,
   div.soliloquy-container .soliloquy-caption h2 {
@@ -5045,7 +5048,7 @@ Media Queries
     font-size: 3.2rem;
   }
 
-  /* line 3313, sass/modules/_modules.scss */
+  /* line 3314, sass/modules/_modules.scss */
   .footer-left,
   .footer-right {
     float: none;
@@ -5055,27 +5058,27 @@ Media Queries
     text-align: left;
   }
 
-  /* line 3322, sass/modules/_modules.scss */
+  /* line 3323, sass/modules/_modules.scss */
   .footer-nav ul.nav {
     float: none;
   }
 }
 @media only screen and (max-width: 380px) {
-  /* line 3330, sass/modules/_modules.scss */
+  /* line 3331, sass/modules/_modules.scss */
   .title-area {
     max-width: 96%;
     padding: 30px 2%;
     padding: 3rem 2%;
   }
 
-  /* line 3336, sass/modules/_modules.scss */
+  /* line 3337, sass/modules/_modules.scss */
   .home-cta .widget-area {
     float: none;
     margin: 0 auto;
     width: 96%;
   }
 
-  /* line 3342, sass/modules/_modules.scss */
+  /* line 3343, sass/modules/_modules.scss */
   .site-title {
     font-size: 52px;
     font-size: 5.2rem;
