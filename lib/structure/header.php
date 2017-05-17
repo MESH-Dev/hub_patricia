@@ -20,7 +20,7 @@
 		echo '<nav class="gateway-line">';
 		echo '<div class="wrap">';
 		//echo '<p style="color:white;">'
-		echo '<a class="social-nav-cta" href="'.$top_link.'">Take the first step →</a>';
+		echo '<a class="social-nav-cta" href="'.$top_link.'">Take the First Step →</a>';
 		echo '<div class="social-icons">';
 		echo '<a href="">';
 		echo '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><defs><style>.cls-1{fill:#fff;}</style></defs><title>002-twitter</title><path class="cls-1" d="M25,0A25,25,0,1,0,50,25,25,25,0,0,0,25,0ZM37.44,19.39l0,.8c0,8.14-6.19,17.51-17.51,17.51a17.42,17.42,0,0,1-9.43-2.77A12.66,12.66,0,0,0,12,35a12.35,12.35,0,0,0,7.64-2.63,6.17,6.17,0,0,1-5.75-4.27A6.33,6.33,0,0,0,16.65,28a6.16,6.16,0,0,1-4.94-6v-.08a6.15,6.15,0,0,0,2.79.77,6.16,6.16,0,0,1-1.91-8.22,17.47,17.47,0,0,0,12.69,6.43,6.16,6.16,0,0,1,10.49-5.61,12.46,12.46,0,0,0,3.91-1.49A6.17,6.17,0,0,1,37,17.18a12.34,12.34,0,0,0,3.53-1A12.44,12.44,0,0,1,37.44,19.39Z"/></svg>';

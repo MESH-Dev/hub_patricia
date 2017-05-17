@@ -39,7 +39,7 @@
 
 	@media screen and (max-width: 750px){
 		padding: 40px;
-  	}	
+  	}
 
 	&.wp-widget-plugin-box{
 		height:initial;
@@ -228,7 +228,7 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background-color: $yellow-green;
+			background-color: $blue;
 			transition: background-color 0.2s ease-in-out;
 			z-index: 1;
 			opacity: 0.5;
@@ -237,9 +237,9 @@
 		&:active,
 		&:focus{
 			.cta-filter{
-				background-color: $blue;
+				background-color: $yellow-green;
 			}
-		} 
+		}
 		@media screen and (max-width: 750px){
 			height: 200px;
 			margin: 0;
@@ -391,6 +391,9 @@ form.frm_pro_form{
 	}
 	.frm_form_field{
 		margin: 0 0 40px 0;
+		label.frm_primary_label{
+			margin-bottom: 20px;
+		}
 	}
 	.frm_opt_container{
 		label{
@@ -419,6 +422,14 @@ form.frm_pro_form{
 				margin-bottom: 40px;
 			}
 		}
+		.notes-field{
+			label{
+				font-family: 'Arvo', sans-serif;
+				font-size: 4.8rem;
+				font-weight: 400;
+				color: $white;
+			}
+		}
 	}
 	button{
 		background-color: $dark-navy;
@@ -445,8 +456,8 @@ form.frm_pro_form{
 		label{
 			display: block;
 			position: relative;
-			cursor: pointer;	
-			margin-bottom: 10px;		
+			cursor: pointer;
+			margin-bottom: 10px;
 			&::before{
 				content: '';
 				margin-right: 10px;
@@ -480,6 +491,18 @@ form.frm_pro_form{
 			// 	width: 90px;
 			// 	opacity: 1;
 			// }
+		}
+	}
+}
+
+//Blog Page
+.page-template-page_blog{
+	.entry-header{
+		h2.entry-title{
+			a{
+				font-family: 'Arvo', sans-serif;
+				font-weight: normal;
+			}
 		}
 	}
 }
