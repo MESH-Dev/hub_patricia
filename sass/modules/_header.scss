@@ -88,7 +88,7 @@
 			line-height: 2rem;
 			&:hover{
 				text-decoration: none;
-				opacity: 0.7;
+				color: $navy;
 			}
 		}
 	}
@@ -180,7 +180,7 @@
 	.mobile-nav-home{
 		position: absolute;
 		top: 22px;
-		left: 40px;
+		left: 20px;
 		img{
 			height: 60px;
 		}
@@ -190,7 +190,7 @@
 		font-size: 1.8rem;
 		position: absolute;
 		top: 30px;
-		right: 40px;
+		right: 20px;
 		background-color: $dark-navy;
 		color: $white;
 		height: 44px;
@@ -224,7 +224,7 @@ body.home.page-template .mobile-header{
 	font-size: 1.8rem;
 	position: absolute;
 	top: 30px;
-	right: 40px;
+	right: 20px;
 	background-color: $dark-navy;
 	color: $white;
 	height: 44px;

@@ -2480,6 +2480,9 @@ Color Options
 .patricia-green .entry-content a {
 	font-family: 'Neris-Bold', sans-serif;
 	color: $blue;
+	&.close-sidr{
+		font-family: 'Neris-Regular', sans-serif;
+	}
 }
 
 .patricia-green .entry-meta a:hover,

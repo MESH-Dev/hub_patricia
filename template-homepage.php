@@ -1,14 +1,14 @@
-<?php 
+<?php
 
 /* Template Name: Homepage Template*/
 
-get_header(); 
+get_header();
 
 ?>
 
 
 <main id="content" class="shaun">
-	<?php 
+	<?php
 		$background = get_field('wg_background_image');
 		$background_url = $background['sizes']['large'];
 		$callout_white_text = get_field('callout_text');
@@ -19,7 +19,7 @@ get_header();
 		<div class="container">
 			<div class="columns-2 gate-spacer"></div>
 			<div class="columns-6 gate-cta">
-				
+
 				<h4><?php echo $callout_white_text; ?> <span><?php echo $callout_green; ?></span></h4>
 
 				<div id="dropdown-trigger" class="cta-dropdown">
@@ -48,11 +48,11 @@ get_header();
 								$callout_text = get_sub_field('callout_text');
 								$page_link = get_sub_field('page_link');;
 						?>
-							<div class="columns-4 secondary-cta">
-								<h4><a href="<?php echo $page_link ?>"><?php echo $callout_text; ?></a></h4>
+							<a href="<?php echo $page_link ?>" class="columns-4 secondary-cta">
+								<h4><?php echo $callout_text; ?></h4>
 								<div class="cta-filter"></div>
               					<div class="cta-bg" style="background-image: url('<?php echo $background_url_cb; ?>')"></div>
-							</div>
+							</a>
 							<?php endwhile; endif; ?>
 			</div>
 		</div>

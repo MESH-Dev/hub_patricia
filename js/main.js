@@ -24,10 +24,10 @@ $('#dropdown-trigger:not(.form-field)').click(function(){
 	$('#dropdown-trigger').toggleClass('open');
 });
 
-$('.sidr-inner .menu-item-has-children').click(function(event){
+$('.sidr-inner .menu-item-has-children > a').click(function(event){
 	event.preventDefault();
 	event.stopPropagation();
-	$(this).toggleClass('open');
+	$(this).parent().toggleClass('open');
 });
 
 $('.frm_opt_container input').click(function(){

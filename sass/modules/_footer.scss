@@ -52,6 +52,31 @@
 		.signup-leadin{
 			font-family: 'Neris-Bold', sans-serif;
 		}
+		.kws_form{
+			#constant-contact-signup-errors{
+				background-color: rgba(255,255,255,0.7);
+				color: $red;
+				padding: 5px;
+				ul{
+					list-style: none;
+					margin: 0;
+					li{
+						margin: 0;
+						label{
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+		.credit{
+			a{
+				&:hover{
+					text-decoration: none;
+					color: $yellow-green;
+				}
+			}
+		}
 		form{
 			margin: 10px 0;
 			input[type="text"]{
@@ -73,7 +98,7 @@
 				}
 				&:-moz-placeholder {
 				  color: $white;
-				}			
+				}
 			}
 			.cc_email_address{
 				border-bottom: 2px solid $yellow-green;
@@ -85,7 +110,7 @@
 				font-size: 24px;
 				line-height: 24px;
 				position: absolute;
-				top: 0;
+				bottom: 4px;
 				right: 0;
 				background: none;
 				display: inline-block;
