@@ -506,6 +506,41 @@ form.frm_pro_form{
 		}
 	}
 }
+.widget.WV.Hub.form{
+	h4{
+		font-size: 2.2rem;
+	}
+}
+.comment-form{
+	.form-submit{
+		left: 0;
+		bottom: 0;
+		.submit{
+			background-color: $dark-navy;
+			width: 120px;
+			border-radius: 10px;
+			padding: 5px;
+			&:hover{
+				background-color: $dark-navy;
+				color: $yellow-green;
+			}
+		}
+		background-color: $dark-navy;
+		height: 44px;
+		font-family: 'Neris-Bold', sans-serif;
+		color: $white;
+		border-radius: 10px;
+		position: relative;
+		width: 120px;
+		&:hover{
+			color: $yellow-green;
+			background-color: $dark-navy;
+		}
+		@media screen and ($bp-smaller-than-tablet){
+			width: 100%;
+		}
+	}
+}
 
 //Accessibility
 .sr-only {

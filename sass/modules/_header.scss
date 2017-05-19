@@ -147,13 +147,13 @@
 			&:hover{
 				.sub-menu{
 					left: 100%;
+					right: auto;
 				}
 			}
 		}
 	}
 	ul.sub-menu{
 		margin: 0;
-		width: 100%;
 		border-radius: 4px;
 		background-color: $navy;
 		padding: 4px 0;
@@ -236,6 +236,8 @@ body.home.page-template .mobile-header{
 }
 
 #sidr-main{
+	right: -320px;
+	width: 320px;
 	background-color: rgba(255,255,255,0.9);
 	font-family: 'Neris-Bold', sans-serif;
 	.sidr-inner:first-of-type{
@@ -264,8 +266,9 @@ body.home.page-template .mobile-header{
 		display: block;
 		margin-bottom: 0px;
 		& > a {
+			font-size: 1.8rem;
 			padding-left: 10px;
-			line-height: 44px;
+			line-height: 60px;
 		}
 		ul{
 			&.sub-menu{

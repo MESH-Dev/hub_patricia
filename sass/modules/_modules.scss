@@ -1346,7 +1346,8 @@ Site Navigation
 // }
 
 .genesis-nav-menu .menu-item:hover > .sub-menu {
-	left: auto;
+	left: -20px;
+	right: -20px;
 	opacity: 1;
 }
 
@@ -2249,12 +2250,12 @@ Site Footer
 
 .footer-left {
 	float: left;
-	max-width: 45%;
+	width: 45%;
 }
 
 .footer-right {
 	float: right;
-	max-width: 49%;
+	width: 45%;
 	text-align: right;
 }
 
@@ -3319,7 +3320,7 @@ Media Queries
 		float: none;
 		margin: 0 0 20px;
 		margin: 0 0 2rem;
-		max-width: 100%;
+		width: 100%;
 		text-align: left;
 	}
 
