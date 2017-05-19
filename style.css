@@ -5696,14 +5696,8 @@ form.frm_pro_form .frm_opt_container:not(.dropdown-menu-type) label.checked::aft
   color: #D0E873;
   background-color: #0B1C2D;
 }
-@media screen and (max-width: 750px) {
-  /* line 515, sass/modules/_layout.scss */
-  .comment-form .form-submit {
-    width: 100%;
-  }
-}
 
-/* line 546, sass/modules/_layout.scss */
+/* line 543, sass/modules/_layout.scss */
 .sr-only {
   position: absolute;
   width: 1px;
