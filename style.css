@@ -5336,7 +5336,7 @@ Media Queries
   z-index: 2;
   margin: 0;
   line-height: 1.2;
-  background-color: rgba(116, 172, 199, 0.5);
+  background-color: rgba(116, 172, 199, 0.7);
   transition: background-color 0.2s ease-in-out;
   width: 100%;
 }
@@ -5382,7 +5382,7 @@ Media Queries
 }
 /* line 239, sass/modules/_layout.scss */
 .secondary-cta-group .secondary-cta:hover h4, .secondary-cta-group .secondary-cta:active h4, .secondary-cta-group .secondary-cta:focus h4 {
-  background-color: rgba(208, 232, 115, 0.5);
+  background-color: rgba(208, 232, 115, 0.7);
 }
 @media screen and (max-width: 750px) {
   /* line 172, sass/modules/_layout.scss */
