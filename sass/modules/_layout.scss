@@ -199,6 +199,7 @@
 			line-height: 1.2;
 			background-color: $blue-rgba;
 			transition: background-color 0.2s ease-in-out;
+			width: 100%;
 			&::after{
 				content: ' →'
 			}
