@@ -50,7 +50,6 @@ get_header();
 						?>
 							<a href="<?php echo $page_link ?>" class="columns-4 secondary-cta">
 								<h4><?php echo $callout_text; ?></h4>
-								<div class="cta-filter"></div>
               					<div class="cta-bg" style="background-image: url('<?php echo $background_url_cb; ?>')"></div>
 							</a>
 							<?php endwhile; endif; ?>

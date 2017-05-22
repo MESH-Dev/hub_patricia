@@ -197,6 +197,8 @@
 			z-index: 2;
 			margin: 0;
 			line-height: 1.2;
+			background-color: $blue-rgba;
+			transition: background-color 0.2s ease-in-out;
 			&::after{
 				content: ' →'
 			}
@@ -218,9 +220,6 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
-			filter: grayscale(1);
-			// height: 100%;
-			// width: 100%;
 		}
 		.cta-filter{
 			position: absolute;
@@ -236,8 +235,8 @@
 		&:hover,
 		&:active,
 		&:focus{
-			.cta-filter{
-				background-color: $yellow-green;
+			h4{
+				background-color: $yellow-green-rgba;
 			}
 		}
 		@media screen and (max-width: 750px){
