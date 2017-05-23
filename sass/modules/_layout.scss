@@ -316,6 +316,11 @@
 			padding: 0 40px;
 		}
 	}
+	.cta-dropdown{
+		@media screen and (max-width: 348px){
+			height: 75px;
+		}
+	}
 	.site-inner{
 		background: $navy;
 	}
