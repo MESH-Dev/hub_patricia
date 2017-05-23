@@ -24,7 +24,9 @@ $('#dropdown-trigger:not(.form-field)').click(function(){
 	$('#dropdown-trigger').toggleClass('open');
 });
 
-$('.sidr-inner .menu-item-has-children > a').click(function(event){
+$('.sidr-inner .menu-item-has-children > a').append('<div class="arrow"></div>');
+
+$('.sidr-inner .menu-item-has-children > a .arrow').click(function(event){
 	event.preventDefault();
 	event.stopPropagation();
 	$(this).parent().toggleClass('open');
