@@ -41,11 +41,18 @@
 		padding: 40px;
   	}
 
+	@media screen and ($bp-smaller-than-mobile){
+		padding: 20px;
+	}
+
 	&.wp-widget-plugin-box{
 		height:initial;
 		width:initial;
 		padding:1em;
 		background-attachment: initial;
+		@media screen and ($bp-smaller-than-mobile){
+			padding: 1em .5em;
+		}
 	}
 }
 
@@ -85,9 +92,9 @@
 	color: $yellow-green;
 	padding: 12px;
 	cursor: pointer;
-	@media screen and (max-width: 344px){
-		height: 75px;
-	}
+	// @media screen and (max-width: 344px){
+	// 	height: 75px;
+	// }
 	//Styling for the CTA widget
 	&.cta-widget{
 		h6{
@@ -497,6 +504,12 @@ form.frm_pro_form{
 			// 	opacity: 1;
 			// }
 		}
+	}
+}
+
+@media screen and ($bp-smaller-than-mobile){
+	form.frm_pro_form .frm_form_fields fieldset{
+	  padding: 0;
 	}
 }
 
