@@ -5,6 +5,14 @@
 // 	left: 0;
 // }
 
+//Removes the webkit autofill styling
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill{
+	background-color:transparent !important;
+	-webkit-box-shadow: none !important;
+}
+
 //Home & Global
 .gate-bg{
 	// width: 100vw;
@@ -23,13 +31,13 @@
 	background-blend-mode:multiply;
 	-webkit-backround-blend-mode:multiply;
 
-	@media ($bp-smaller-than-tablet){
+	@media ($bp-smaller-than-desktop){
 		background-attachment:initial !important;
 	}
 
 	.gate-spacer{
 		height: 100%;
-		@media screen and (max-width: 750px){
+		@media ($bp-smaller-than-tablet){
 			display: none;
 		}
 	}
@@ -37,7 +45,7 @@
 		height: 100%;
 	}
 
-	@media screen and (max-width: 750px){
+	@media ($bp-smaller-than-tablet){
 		padding: 40px;
   	}
 
@@ -72,7 +80,7 @@
 	}
 
 	h4{
-		@media screen and (max-width: 400px){
+		@media ($bp-smaller-than-mobile){
 			font-size: 2.6rem;
 		}
 	}
@@ -116,7 +124,7 @@
 		font-size: 2rem;
 		display: inline-block;
 		vertical-align: top;
-		@media screen and (max-width: 400px){
+		@media ($bp-smaller-than-mobile){
 			font-size: 1.8rem;
 		}
 	}
@@ -184,7 +192,7 @@
 			content: '';
 			display: block;
 			padding-top: 100%;
-			@media screen and (max-width: 750px){
+			@media ($bp-smaller-than-tablet){
 				display: none;
 			}
 		}
@@ -247,12 +255,12 @@
 				background-color: $yellow-green-rgba;
 			}
 		}
-		@media screen and (max-width: 750px){
+		@media ($bp-smaller-than-tablet){
 			height: 200px;
 			margin: 0;
 		}
 	}
-	@media screen and (max-width: 750px){
+	@media ($bp-smaller-than-tablet){
 		display: initial;
 	}
 }
