@@ -513,6 +513,12 @@ form.frm_pro_form{
 	}
 }
 
+@media screen and ($bp-smaller-than-mobile){
+	.page-template-template-form .site-inner, .form-page .site-inner{
+		padding: 20px;
+	}
+}
+
 //Blog Page
 .page-template-page_blog{
 	.entry-header{
@@ -553,6 +559,15 @@ form.frm_pro_form{
 		&:hover{
 			color: $yellow-green;
 			background-color: $dark-navy;
+		}
+	}
+}
+
+@media screen and ($bp-smaller-than-tablet){
+	.page-template-page_blog, .post-template-default{
+		.site-inner{
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 	}
 }
