@@ -72,7 +72,8 @@ function wsm_child_do_footer() {
 
 	//Web Signup form shortcode
 	echo '<p class="signup-leadin">'.$signup_leadin.'</p>';
-	echo do_shortcode($cc_shortcode);
+	//echo do_shortcode($cc_shortcode);
+	echo $cc_shortcode;
 
 	$credit= genesis_get_option( 'wsm_credit', 'patricia-settings' );
 
